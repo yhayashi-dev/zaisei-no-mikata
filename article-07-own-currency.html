@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>自国通貨建て国債なら安全なのか｜財政の見方</title>
+<style>
+:root{--navy:#0b3568;--navy2:#08264d;--blue:#eaf4ff;--green:#eaf6ed;--orange:#fff3de;--violet:#f2efff;--ink:#14253d;--muted:#617188;--line:#dce5ef;--bg:#f6f8fb}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8}
+a{color:inherit}.wrap{width:min(1120px,calc(100% - 28px));margin:auto}
+header{position:sticky;top:0;background:#fffffff2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}
+.head{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:22px;font-weight:900;color:var(--navy);text-decoration:none}.nav a{text-decoration:none;font-weight:800;font-size:14px;margin-left:20px}
+.hero{background:linear-gradient(135deg,#fff,#edf6ff 46%,#f3f0ff);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center;padding:58px 0}
+.eyebrow{display:inline-block;background:#d7ebff;color:var(--navy);font-size:13px;font-weight:900;padding:7px 12px;border-radius:999px}
+h1{font-size:clamp(40px,4.8vw,62px);line-height:1.15;color:var(--navy2);margin:15px 0 10px}.sub{font-size:22px;font-weight:800;color:#40536b}
+.tags{display:flex;gap:8px;flex-wrap:wrap}.tag{font-size:12px;font-weight:900;background:#fff;border:1px solid #c7d6e6;border-radius:999px;padding:6px 10px}
+.art{background:#fff;border:1px solid var(--line);border-radius:24px;padding:16px;box-shadow:0 16px 40px #19365b18}.art svg{width:100%;display:block}
+.layout{display:grid;grid-template-columns:225px minmax(0,1fr);gap:34px;padding:40px 0 70px}.toc{position:sticky;top:92px;align-self:start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.toc strong{display:block;color:var(--navy2);margin-bottom:8px}.toc a{display:block;text-decoration:none;color:#506078;font-size:14px;padding:5px 0}
+article{max-width:800px}.summary,.box{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;margin-bottom:22px}
+.summary{background:linear-gradient(135deg,var(--blue),#fff)}h2{font-size:28px;line-height:1.35;color:var(--navy2);margin:0 0 15px}.summary h2{font-size:30px}
+.figure{background:#f9fbfd;border:1px solid var(--line);border-radius:17px;padding:18px;margin:18px 0}.figure svg{width:100%;display:block}.caption{font-size:13px;color:var(--muted);margin-top:8px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel{border-radius:15px;padding:18px}.panel h3{margin:0 0 7px;color:var(--navy2)}.left{background:var(--blue)}.right{background:var(--green)}.warn{background:var(--orange)}.violet{background:var(--violet)}
+.note{border-left:5px solid #3d82c6;background:var(--blue);padding:15px 17px;border-radius:0 12px 12px 0;font-weight:800;margin:18px 0}.orange{border-left-color:#d59024;background:var(--orange)}
+.flow-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.flow{border-radius:15px;padding:17px;text-align:center;border:1px solid var(--line)}.flow:nth-child(1){background:var(--blue)}.flow:nth-child(2){background:var(--orange)}.flow:nth-child(3){background:var(--violet)}.flow strong{display:block;color:var(--navy2);font-size:20px}
+.mis{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:12px 0}.mis b{display:block;background:#fff4e4;color:#8b5b14;padding:12px 15px}.mis p{margin:0;padding:15px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px}.check{background:var(--green);border-radius:12px;padding:12px;font-weight:800}
+.next{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.next a{text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}.next small{color:var(--muted)}
+footer{background:var(--navy2);color:#fff;padding:28px 0}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.art{order:-1}.layout{grid-template-columns:1fr}.toc{position:static}.next{grid-template-columns:1fr}.flow-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.nav{display:none}.hero-grid{padding:34px 0}.sub{font-size:18px}.layout{padding-top:22px}.summary,.box{padding:20px}.split,.checks{grid-template-columns:1fr}h1{font-size:38px}h2{font-size:24px}}
+</style>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/><meta content="#0b3568" name="theme-color"/><meta content="light" name="color-scheme"/></head>
+<body>
+<header><div class="wrap head"><a class="brand" href="index.html">財政の見方</a><nav class="nav"><a href="index.html">トップ</a><a href="#summary">30秒まとめ</a><a href="sources.html">出典</a></nav></div></header>
+<section class="hero"><div class="wrap hero-grid">
+<div><span class="eyebrow">ARTICLE 07・財政と通貨</span><h1>自国通貨建て国債なら安全なのか</h1><p class="sub">円で払えることと、負担がないことは別です</p><div class="tags"><span class="tag">読了8分</span><span class="tag">中級</span><span class="tag">確認日 2026年7月</span></div></div>
+<div class="art"><svg aria-label="円で払えることと経済的負担がないことを分けた図" viewbox="0 0 650 390">
+<rect fill="#f8fbff" height="390" rx="22" width="650"></rect>
+<circle cx="325" cy="92" fill="#0b3568" r="62"></circle><text fill="#fff" font-size="38" font-weight="900" text-anchor="middle" x="325" y="82">¥</text><text fill="#fff" font-size="17" font-weight="800" text-anchor="middle" x="325" y="116">円建て国債</text>
+<rect fill="#eaf6ed" height="125" rx="20" stroke="#2f7b4b" stroke-width="4" width="245" x="45" y="210"></rect><text fill="#2f7b4b" font-size="22" font-weight="900" text-anchor="middle" x="167" y="250">名目上の支払い</text><text fill="#4c6078" font-size="17" font-weight="800" text-anchor="middle" x="167" y="283">円で元本と利子を払う</text><text fill="#4c6078" font-size="15" font-weight="800" text-anchor="middle" x="167" y="310">外貨不足とは条件が違う</text>
+<rect fill="#fff3de" height="125" rx="20" stroke="#d59024" stroke-width="4" width="245" x="360" y="210"></rect><text fill="#8d5b13" font-size="22" font-weight="900" text-anchor="middle" x="482" y="250">経済的な負担</text><text fill="#4c6078" font-size="17" font-weight="800" text-anchor="middle" x="482" y="283">インフレ・円安・金利</text><text fill="#4c6078" font-size="15" font-weight="800" text-anchor="middle" x="482" y="310">購買力や予算に影響</text>
+<path d="M298 144l-103 66M352 144l103 66" stroke="#8699ac" stroke-width="6"></path>
+<text fill="#0b3568" font-size="25" font-weight="900" text-anchor="middle" x="325" y="190">≠</text>
+</svg></div></div></section>
+<div class="wrap layout">
+<aside class="toc"><strong>このページの内容</strong><a href="#summary">30秒で分かる結論</a><a href="#meaning">自国通貨建てとは</a><a href="#strengths">主な強み</a><a href="#issuer">政府と日銀</a><a href="#burden">二つの問い</a><a href="#inflation">インフレ・円安</a><a href="#interest">金利</a><a href="#limits">本当の制約</a><a href="sources.html">出典</a></aside>
+<article>
+<section class="summary" id="summary"><h2>30秒で分かる結論</h2><ul><li>日本国債の多くは円建てです。</li><li>外貨を海外から必ず調達しなければ返せない債務とは条件が異なります。</li><li>ただし、円で支払えることと経済的な負担がないことは別です。</li><li>インフレ、円安、金利、供給力、市場の信頼が制約になります。</li></ul></section>
+<section class="box" id="meaning"><h2>1. 自国通貨建て国債とは</h2><div class="split"><div class="panel right"><h3>自国通貨建て</h3><p>その国が発行する通貨で元本と利子を支払います。</p></div><div class="panel warn"><h3>外貨建て</h3><p>ドルやユーロなど、自国が発行できない通貨で支払います。</p></div></div>
+<div class="note">円建て国債では、円安になっても国債の額面そのものがドル連動で増えるわけではありません。</div></section>
+<section class="box" id="strengths"><h2>2. 自国通貨建ての主な強み</h2><div class="flow-grid">
+<div class="flow"><strong>通貨</strong><p>支払いに必要なのは自国通貨。</p></div>
+<div class="flow"><strong>為替</strong><p>外貨建てのように元本が自動的に膨らまない。</p></div>
+<div class="flow"><strong>中央銀行</strong><p>自国通貨の金融政策を行える。</p></div>
+</div>
+<p>外貨不足だけを理由に返済不能となる構造ではないことが、重要な違いです。</p></section>
+<section class="box" id="issuer"><h2>3. 政府が自由に円を発行するのか</h2>
+<div class="figure"><svg viewbox="0 0 700 270">
+<rect fill="#fff" height="90" rx="18" stroke="#0b3568" stroke-width="4" width="160" x="35" y="85"></rect><text fill="#0b3568" font-size="23" font-weight="900" text-anchor="middle" x="115" y="137">政府</text>
+<rect fill="#fff" height="90" rx="18" stroke="#7162b7" stroke-width="4" width="160" x="270" y="35"></rect><text fill="#56459e" font-size="21" font-weight="900" text-anchor="middle" x="350" y="87">市場・金融機関</text>
+<rect fill="#fff" height="90" rx="18" stroke="#2f7b4b" stroke-width="4" width="160" x="505" y="85"></rect><text fill="#2f7b4b" font-size="23" font-weight="900" text-anchor="middle" x="585" y="137">日本銀行</text>
+<path d="M195 112l75-25" stroke="#3d82c6" stroke-width="7"></path><polygon fill="#3d82c6" points="270,87 247,84 255,105"></polygon><text fill="#3d82c6" font-size="16" font-weight="900" x="217" y="77">国債発行</text>
+<path d="M430 87l75 25" stroke="#74a987" stroke-width="7"></path><polygon fill="#74a987" points="505,112 482,93 477,116"></polygon><text fill="#47795a" font-size="16" font-weight="900" x="446" y="77">市場買入れ</text>
+<rect fill="#fff3de" height="50" rx="14" width="240" x="230" y="195"></rect><text fill="#8d5b13" font-size="17" font-weight="900" text-anchor="middle" x="350" y="226">政府が直接、無制限に紙幣を使う仕組みではない</text>
+</svg></div>
+<p>銀行券を発行するのは日本銀行です。政府の国債発行と、日銀の金融政策は区別して考えます。</p></section>
+<section class="box" id="burden"><h2>4. 「払える」と「負担がない」は違う</h2><div class="split"><div class="panel right"><h3>名目上の支払い</h3><p>約束された円の金額を支払えるか。</p></div><div class="panel warn"><h3>実質的な負担</h3><p>物価、為替、金利、購買力、予算に何が起きるか。</p></div></div>
+<div class="note orange">形式上の債務不履行を避けられても、インフレで受け取るお金の価値が下がる場合があります。</div></section>
+<section class="box" id="inflation"><h2>5. インフレと円安という形の負担</h2>
+<div class="figure"><svg viewbox="0 0 700 290">
+<rect fill="#eaf4ff" height="70" rx="15" width="185" x="35" y="35"></rect><text fill="#0b3568" font-size="20" font-weight="900" text-anchor="middle" x="127" y="78">需要・使えるお金</text>
+<rect fill="#eaf6ed" height="70" rx="15" width="185" x="480" y="35"></rect><text fill="#2f7b4b" font-size="20" font-weight="900" text-anchor="middle" x="572" y="78">商品・サービス供給</text>
+<text fill="#d59024" font-size="34" font-weight="900" text-anchor="middle" x="350" y="82">＞</text>
+<path d="M350 115v55" stroke="#d59024" stroke-width="7"></path><polygon fill="#d59024" points="350,170 339,150 361,150"></polygon>
+<rect fill="#fff3de" height="75" rx="17" stroke="#d59024" stroke-width="4" width="230" x="235" y="170"></rect><text fill="#8d5b13" font-size="22" font-weight="900" text-anchor="middle" x="350" y="202">物価上昇</text><text fill="#4c6078" font-size="16" font-weight="800" text-anchor="middle" x="350" y="229">購買力低下・輸入価格上昇</text>
+</svg></div>
+<p>円安は国債の円建て元本を増やしませんが、エネルギーや食料など輸入品の価格に影響します。</p></section>
+<section class="box" id="interest"><h2>6. 金利が上がる可能性</h2>
+<div class="split"><div class="panel left"><h3>インフレ予想</h3><p>投資家は実質価値の低下を補う高い利回りを求める場合があります。</p></div><div class="panel violet"><h3>財政や通貨への不安</h3><p>リスクプレミアムが上乗せされる場合があります。</p></div></div>
+<div class="note">自国通貨建てであっても、いつでも同じ低金利で借り換えられるとは限りません。</div></section>
+<section class="box" id="limits"><h2>7. 本当の制約は、お金だけではない</h2><div class="checks"><div class="check">✓ 働く人の数</div><div class="check">✓ 国内の生産力</div><div class="check">✓ 原材料・エネルギー</div><div class="check">✓ 物価と為替</div><div class="check">✓ 国債市場の需要</div><div class="check">✓ 政府・中央銀行への信頼</div></div>
+<div class="note orange">通貨を供給できても、医師、介護職、住宅、電力、食料が同じ量だけ自動的に増えるわけではありません。</div></section>
+<section class="box"><h2>8. よくある誤解</h2>
+<div class="mis"><b>「自国通貨建てなら絶対に破綻しない」</b><p>外貨不足型の危機とは異なりますが、インフレ、通貨安、金利上昇、政治的な支払停止などの可能性まで消えるわけではありません。</p></div>
+<div class="mis"><b>「日銀が全部買えば政府の負担は消える」</b><p>日銀側には国債という資産と、当座預金などの負債が残り、金利やインフレの問題も続きます。</p></div>
+<div class="mis"><b>「円を作れるなら税金はいらない」</b><p>税には財源以外にも、需要調整や所得再分配などの役割があります。</p></div>
+</section>
+<section class="box"><h2>ニュースを見るときの確認項目</h2><div class="checks"><div class="check">✓ 外貨建てとの違いを説明しているか</div><div class="check">✓ インフレを考慮しているか</div><div class="check">✓ 為替への影響を見ているか</div><div class="check">✓ 金利上昇を見ているか</div><div class="check">✓ 日銀と政府を区別しているか</div><div class="check">✓ 「絶対」「無限」を使っていないか</div></div></section>
+<section class="box"><h2>次に読む記事</h2><div class="next"><a href="article-08-interest.html"><strong>金利が上がると何が起きるか</strong><br/><small>利払い費への影響を見る</small></a><a href="#"><strong>日本銀行が国債を持つ意味</strong><br/><small>政府と日銀の関係を深掘りする</small></a><a href="article-09-comparison.html"><strong>各国の財政をどう比べるか</strong><br/><small>通貨制度の違いを見る</small></a></div></section>
+<section class="box" id="sources"><h2>主な出典</h2><ul><li>日本銀行「日本銀行が国債の引受けを行わないのはなぜですか」</li><li>財務省財務総合政策研究所「財政の持続可能性とは何か」</li><li>IMF「Fiscal Monitor」</li></ul><p><strong>内容確認日：</strong>2026年7月16日</p></section>
+</article>
+</div>
+<footer><div class="wrap"><strong>財政の見方</strong><br/><small>結論より先に、見るポイントを。</small><div class="site-links" style="margin-top:12px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px"><a href="index.html" style="color:white;text-decoration:none">トップ</a><a href="index.html#articles" style="color:white;text-decoration:none">記事一覧</a><a href="glossary.html" style="color:white;text-decoration:none">用語集</a><a href="sources.html" style="color:white;text-decoration:none">出典</a><a href="editorial.html" style="color:white;text-decoration:none">編集方針</a><a href="roadmap.html" style="color:white;text-decoration:none">今後追加する内容</a></div></div></footer>
+</body></html>

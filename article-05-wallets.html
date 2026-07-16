@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>政府の財布と日本全体の財布｜財政の見方</title>
+<style>
+:root{--navy:#0b3568;--navy2:#08264d;--blue:#eaf4ff;--green:#eaf6ed;--orange:#fff3de;--violet:#f2efff;--ink:#14253d;--muted:#617188;--line:#dce5ef;--bg:#f6f8fb}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8}
+a{color:inherit}.wrap{width:min(1120px,calc(100% - 28px));margin:auto}
+header{position:sticky;top:0;background:#fffffff2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}
+.head{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:22px;font-weight:900;color:var(--navy);text-decoration:none}.nav a{text-decoration:none;font-weight:800;font-size:14px;margin-left:20px}
+.hero{background:linear-gradient(135deg,#fff,#edf6ff 48%,#f2f9f3);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center;padding:58px 0}
+.eyebrow{display:inline-block;background:#d7ebff;color:var(--navy);font-size:13px;font-weight:900;padding:7px 12px;border-radius:999px}
+h1{font-size:clamp(42px,5vw,64px);line-height:1.15;color:var(--navy2);margin:15px 0 10px}.sub{font-size:22px;font-weight:800;color:#40536b}
+.tags{display:flex;gap:8px;flex-wrap:wrap}.tag{font-size:12px;font-weight:900;background:#fff;border:1px solid #c7d6e6;border-radius:999px;padding:6px 10px}
+.art{background:#fff;border:1px solid var(--line);border-radius:24px;padding:16px;box-shadow:0 16px 40px #19365b18}.art svg{width:100%;display:block}
+.layout{display:grid;grid-template-columns:225px minmax(0,1fr);gap:34px;padding:40px 0 70px}.toc{position:sticky;top:92px;align-self:start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.toc strong{display:block;color:var(--navy2);margin-bottom:8px}.toc a{display:block;text-decoration:none;color:#506078;font-size:14px;padding:5px 0}
+article{max-width:800px}.summary,.box{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;margin-bottom:22px}
+.summary{background:linear-gradient(135deg,var(--blue),#fff)}h2{font-size:28px;line-height:1.35;color:var(--navy2);margin:0 0 15px}.summary h2{font-size:30px}
+.figure{background:#f9fbfd;border:1px solid var(--line);border-radius:17px;padding:18px;margin:18px 0}.figure svg{width:100%;display:block}.caption{font-size:13px;color:var(--muted);margin-top:8px}
+.actor-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.actor{border-radius:16px;padding:19px;border:1px solid var(--line)}.actor:nth-child(1){background:var(--blue)}.actor:nth-child(2){background:var(--green)}.actor:nth-child(3){background:var(--orange)}.actor:nth-child(4){background:var(--violet)}.actor:nth-child(5){background:#edf4f5;grid-column:1/-1}
+.actor h3{margin:0 0 8px;color:var(--navy2);font-size:20px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel{border-radius:15px;padding:18px}.panel h3{margin:0 0 7px;color:var(--navy2)}.left{background:var(--blue)}.right{background:var(--green)}.warn{background:var(--orange)}
+.note{border-left:5px solid #3d82c6;background:var(--blue);padding:15px 17px;border-radius:0 12px 12px 0;font-weight:800;margin:18px 0}.orange{border-left-color:#d59024;background:var(--orange)}
+.mis{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:12px 0}.mis b{display:block;background:#fff4e4;color:#8b5b14;padding:12px 15px}.mis p{margin:0;padding:15px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px}.check{background:var(--green);border-radius:12px;padding:12px;font-weight:800}
+.next{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.next a{text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}.next small{color:var(--muted)}
+footer{background:var(--navy2);color:#fff;padding:28px 0}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.art{order:-1}.layout{grid-template-columns:1fr}.toc{position:static}.next{grid-template-columns:1fr}.actor-grid{grid-template-columns:1fr}.actor:nth-child(5){grid-column:auto}}
+@media(max-width:620px){.nav{display:none}.hero-grid{padding:34px 0}.sub{font-size:18px}.layout{padding-top:22px}.summary,.box{padding:20px}.split,.checks{grid-template-columns:1fr}h1{font-size:39px}h2{font-size:24px}}
+</style>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/><meta content="#0b3568" name="theme-color"/><meta content="light" name="color-scheme"/></head>
+<body>
+<header><div class="wrap head"><a class="brand" href="index.html">財政の見方</a><nav class="nav"><a href="index.html">トップ</a><a href="#summary">30秒まとめ</a><a href="sources.html">出典</a></nav></div></header>
+<section class="hero"><div class="wrap hero-grid">
+<div><span class="eyebrow">ARTICLE 05・日本の財政</span><h1>政府の財布と日本全体の財布</h1><p class="sub">同じ「日本」の数字でも、見ている範囲は違います</p><div class="tags"><span class="tag">読了8分</span><span class="tag">初級</span><span class="tag">確認日 2026年7月</span></div></div>
+<div class="art"><svg aria-label="日本全体の中に政府、家計、企業、金融機関、海外との関係がある図" viewbox="0 0 650 390">
+<rect fill="#f8fbff" height="390" rx="22" width="650"></rect>
+<rect fill="#edf6ff" height="330" rx="28" stroke="#0b3568" stroke-width="4" width="580" x="35" y="30"></rect>
+<text fill="#0b3568" font-size="24" font-weight="900" text-anchor="middle" x="325" y="67">日本全体</text>
+<rect fill="#fff" height="95" rx="18" stroke="#0b3568" stroke-width="4" width="220" x="70" y="95"></rect><text fill="#0b3568" font-size="22" font-weight="900" text-anchor="middle" x="180" y="132">政府</text><text fill="#4c6078" font-size="15" font-weight="800" text-anchor="middle" x="180" y="162">税金・国債・政府資産</text>
+<rect fill="#fff" height="95" rx="18" stroke="#2f7b4b" stroke-width="4" width="220" x="360" y="95"></rect><text fill="#2f7b4b" font-size="22" font-weight="900" text-anchor="middle" x="470" y="132">家計</text><text fill="#4c6078" font-size="15" font-weight="800" text-anchor="middle" x="470" y="162">預金・保険・住宅・株式</text>
+<rect fill="#fff" height="90" rx="18" stroke="#d59024" stroke-width="4" width="150" x="70" y="225"></rect><text fill="#8d5b13" font-size="21" font-weight="900" text-anchor="middle" x="145" y="263">企業</text><text fill="#4c6078" font-size="14" font-weight="800" text-anchor="middle" x="145" y="292">設備・現金・借入</text>
+<rect fill="#fff" height="90" rx="18" stroke="#7162b7" stroke-width="4" width="150" x="250" y="225"></rect><text fill="#56459e" font-size="21" font-weight="900" text-anchor="middle" x="325" y="263">金融機関</text><text fill="#4c6078" font-size="14" font-weight="800" text-anchor="middle" x="325" y="292">預金・貸出・国債</text>
+<rect fill="#fff" height="90" rx="18" stroke="#4c8191" stroke-width="4" width="150" x="430" y="225"></rect><text fill="#356572" font-size="21" font-weight="900" text-anchor="middle" x="505" y="263">海外</text><text fill="#4c6078" font-size="14" font-weight="800" text-anchor="middle" x="505" y="292">対外資産・対外負債</text>
+</svg></div></div></section>
+<div class="wrap layout">
+<aside class="toc"><strong>このページの内容</strong><a href="#summary">30秒で分かる結論</a><a href="#actors">複数の財布</a><a href="#flow">お金の流れ</a><a href="#government-vs-country">政府と日本全体</a><a href="#external">対外純資産</a><a href="#assets">政府資産</a><a href="#misunderstanding">よくある誤解</a><a href="#check">数字の見方</a><a href="sources.html">出典</a></aside>
+<article>
+<section class="summary" id="summary"><h2>30秒で分かる結論</h2><ul><li>政府、家計、企業、金融機関は、それぞれ別の経済主体です。</li><li>政府債務と、日本全体の資産・負債は同じ範囲の数字ではありません。</li><li>日本全体に多くの資産があっても、政府が自由に使えるとは限りません。</li><li>最初に「誰の財布の数字か」を確認することが大切です。</li></ul></section>
+<section class="box" id="actors"><h2>1. 日本には複数の財布がある</h2><div class="actor-grid">
+<div class="actor"><h3>政府</h3><p>税金を集め、国債を発行し、公共サービスや社会保障を行います。</p></div>
+<div class="actor"><h3>家計</h3><p>給料を受け取り、預金・保険・株式・住宅などを持ちます。</p></div>
+<div class="actor"><h3>企業</h3><p>商品やサービスを生み、設備投資や借入れを行います。</p></div>
+<div class="actor"><h3>金融機関</h3><p>預金を集め、企業や家計へ貸し出し、国債も保有します。</p></div>
+<div class="actor"><h3>海外</h3><p>日本の政府・企業・金融機関と投資や貸し借りを行います。</p></div>
+</div></section>
+<section class="box" id="flow"><h2>2. お金はどう流れるのか</h2>
+<div class="figure"><svg viewbox="0 0 700 390">
+<rect fill="#fff" height="90" rx="18" stroke="#2f7b4b" stroke-width="4" width="150" x="30" y="130"></rect><text fill="#2f7b4b" font-size="24" font-weight="900" text-anchor="middle" x="105" y="182">家計</text>
+<rect fill="#fff" height="90" rx="18" stroke="#7162b7" stroke-width="4" width="150" x="275" y="40"></rect><text fill="#56459e" font-size="22" font-weight="900" text-anchor="middle" x="350" y="92">銀行</text>
+<rect fill="#fff" height="90" rx="18" stroke="#0b3568" stroke-width="4" width="150" x="520" y="130"></rect><text fill="#0b3568" font-size="24" font-weight="900" text-anchor="middle" x="595" y="182">政府</text>
+<rect fill="#fff3de" height="80" rx="18" stroke="#d59024" stroke-width="4" width="150" x="275" y="270"></rect><text fill="#8d5b13" font-size="21" font-weight="900" text-anchor="middle" x="350" y="317">公共サービス</text>
+<path d="M180 145L275 100" stroke="#74a987" stroke-width="7"></path><polygon fill="#74a987" points="275,100 252,98 261,119"></polygon><text fill="#47795a" font-size="16" font-weight="900" x="222" y="106">預金</text>
+<path d="M425 100L520 145" stroke="#7162b7" stroke-width="7"></path><polygon fill="#7162b7" points="520,145 498,127 492,149"></polygon><text fill="#56459e" font-size="16" font-weight="900" x="452" y="107">国債購入</text>
+<path d="M105 220L295 270" stroke="#d59024" stroke-width="7"></path><polygon fill="#d59024" points="295,270 273,253 268,275"></polygon><text fill="#a66a15" font-size="16" font-weight="900" x="177" y="267">税金</text>
+<path d="M595 220L405 270" stroke="#3d82c6" stroke-width="7"></path><polygon fill="#3d82c6" points="405,270 427,253 432,275"></polygon><text fill="#3d82c6" font-size="16" font-weight="900" x="470" y="267">支出</text>
+<path d="M275 315H170" stroke="#74a987" stroke-width="7"></path><polygon fill="#74a987" points="170,315 190,304 190,326"></polygon>
+<path d="M425 315H530" stroke="#74a987" stroke-width="7"></path><polygon fill="#74a987" points="530,315 510,304 510,326"></polygon>
+</svg><div class="caption">家計から政府へは税金だけでなく、銀行などを通じて国債購入資金が回る場合もあります。</div></div>
+<div class="note">預金者が国債を直接持つとは限りません。預金者が持つのは銀行への預金で、銀行が国債を保有します。</div>
+</section>
+<section class="box" id="government-vs-country"><h2>3. 政府と日本全体は範囲が違う</h2><div class="split"><div class="panel left"><h3>政府の財布</h3><p>国債、税収、政府資産、政府支出など。</p></div><div class="panel right"><h3>日本全体の財布</h3><p>政府に加え、家計、企業、金融機関、海外との関係も含みます。</p></div></div>
+<div class="note orange">政府債務と、日本全体の資産をそのまま差し引いて結論を出すことはできません。</div>
+</section>
+<section class="box" id="external"><h2>4. 対外純資産は日本全体の数字</h2>
+<div class="figure"><svg viewbox="0 0 700 250">
+<rect fill="#eaf6ed" height="100" rx="18" width="200" x="35" y="75"></rect><text fill="#2f7b4b" font-size="22" font-weight="900" text-anchor="middle" x="135" y="115">対外資産</text><text fill="#4f6178" font-size="17" font-weight="800" text-anchor="middle" x="135" y="148">日本の居住者が海外に持つ</text>
+<text fill="#0b3568" font-size="42" font-weight="900" text-anchor="middle" x="350" y="137">−</text>
+<rect fill="#fff3de" height="100" rx="18" width="200" x="465" y="75"></rect><text fill="#8d5b13" font-size="22" font-weight="900" text-anchor="middle" x="565" y="115">対外負債</text><text fill="#4f6178" font-size="17" font-weight="800" text-anchor="middle" x="565" y="148">海外が日本に持つ</text>
+<text fill="#0b3568" font-size="21" font-weight="900" text-anchor="middle" x="350" y="218">＝ 対外純資産</text>
+</svg></div>
+<p>対外純資産には、政府だけでなく、企業、金融機関、家計などの海外資産も含まれます。</p>
+</section>
+<section class="box" id="assets"><h2>5. 政府にも資産がある</h2><div class="split"><div class="panel right"><h3>比較的流動性がある資産</h3><p>現金、預金、有価証券、貸付金など。</p></div><div class="panel warn"><h3>行政サービスに必要な資産</h3><p>道路、庁舎、公共施設、土地など。</p></div></div>
+<div class="note orange">政府資産があることは重要ですが、すべてをすぐ売って国債返済に使えるわけではありません。</div>
+</section>
+<section class="box" id="misunderstanding"><h2>6. よくある誤解</h2>
+<div class="mis"><b>「日本は借金だらけだ」</b><p>多くの場合は政府の負債を指しています。家計や企業の資産まで含む日本全体の話とは別です。</p></div>
+<div class="mis"><b>「日本全体は資産が多いから政府債務は問題ない」</b><p>民間資産を政府が自由に使えるわけではありません。</p></div>
+<div class="mis"><b>「国内で資産と負債が対応するので国債は消える」</b><p>政府と保有者は別の主体で、利子、元本、税金の取引は現実に続きます。</p></div>
+</section>
+<section class="box" id="check"><h2>7. 数字を見るときの確認項目</h2><div class="checks"><div class="check">✓ 誰の資産・負債か</div><div class="check">✓ 政府だけか民間も含むか</div><div class="check">✓ 国内か海外か</div><div class="check">✓ 金融資産か非金融資産か</div><div class="check">✓ 粗額か純額か</div><div class="check">✓ 政府が実際に使える資産か</div></div></section>
+<section class="box"><h2>次に読む記事</h2><div class="next"><a href="article-06-assets.html"><strong>政府の資産は返済資金なのか</strong><br/><small>資産の性質を詳しく見る</small></a><a href="article-07-own-currency.html"><strong>自国通貨建て国債なら安全か</strong><br/><small>政府と中央銀行の関係を見る</small></a><a href="article-09-comparison.html"><strong>各国の財政をどう比べるか</strong><br/><small>国ごとの違いを整理する</small></a></div></section>
+<section class="box" id="sources"><h2>主な出典</h2><ul><li>日本銀行「資金循環統計の概要」</li><li>財務省「本邦対外資産負債残高」</li><li>財務省「国の財務書類」</li><li>内閣府「国民経済計算」</li></ul><p><strong>内容確認日：</strong>2026年7月16日</p></section>
+</article>
+</div>
+<footer><div class="wrap"><strong>財政の見方</strong><br/><small>結論より先に、見るポイントを。</small><div class="site-links" style="margin-top:12px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px"><a href="index.html" style="color:white;text-decoration:none">トップ</a><a href="index.html#articles" style="color:white;text-decoration:none">記事一覧</a><a href="glossary.html" style="color:white;text-decoration:none">用語集</a><a href="sources.html" style="color:white;text-decoration:none">出典</a><a href="editorial.html" style="color:white;text-decoration:none">編集方針</a><a href="roadmap.html" style="color:white;text-decoration:none">今後追加する内容</a></div></div></footer>
+</body></html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>国債とは何か｜財政の見方</title>
+<style>
+:root{--navy:#0b3568;--navy2:#08264d;--blue:#eaf4ff;--green:#eaf6ed;--orange:#fff3de;--ink:#14253d;--muted:#617188;--line:#dce5ef;--bg:#f6f8fb;--white:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8}
+a{color:inherit}.wrap{width:min(1120px,calc(100% - 28px));margin:auto}
+header{position:sticky;top:0;background:#fffffff2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}
+.head{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:22px;font-weight:900;color:var(--navy);text-decoration:none}.nav a{text-decoration:none;font-weight:800;font-size:14px;margin-left:20px}
+.hero{background:linear-gradient(135deg,#fff,#edf6ff 58%,#f3faf4);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center;padding:58px 0}
+.eyebrow{display:inline-block;background:#d7ebff;color:var(--navy);font-size:13px;font-weight:900;padding:7px 12px;border-radius:999px}
+h1{font-size:clamp(42px,5vw,64px);line-height:1.15;color:var(--navy2);margin:15px 0 10px}.sub{font-size:22px;font-weight:800;color:#40536b}
+.tags{display:flex;gap:8px;flex-wrap:wrap}.tag{font-size:12px;font-weight:900;background:#fff;border:1px solid #c7d6e6;border-radius:999px;padding:6px 10px}
+.art{background:#fff;border:1px solid var(--line);border-radius:24px;padding:16px;box-shadow:0 16px 40px #19365b18}.art svg{width:100%;display:block}
+.layout{display:grid;grid-template-columns:225px minmax(0,1fr);gap:34px;padding:40px 0 70px}.toc{position:sticky;top:92px;align-self:start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.toc strong{display:block;color:var(--navy2);margin-bottom:8px}.toc a{display:block;text-decoration:none;color:#506078;font-size:14px;padding:5px 0}
+article{max-width:800px}.summary,.box{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;margin-bottom:22px}
+.summary{background:linear-gradient(135deg,var(--blue),#fff)}h2{font-size:28px;line-height:1.35;color:var(--navy2);margin:0 0 15px}.summary h2{font-size:30px}.figure{background:#f9fbfd;border:1px solid var(--line);border-radius:17px;padding:18px;margin:18px 0}.figure svg{width:100%;display:block}.caption{font-size:13px;color:var(--muted);margin-top:8px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:15px}.panel{border-radius:15px;padding:18px}.debt{background:var(--orange)}.asset{background:var(--green)}.panel h3{margin:0 0 7px;color:var(--navy2)}
+.note{border-left:5px solid #3d82c6;background:var(--blue);padding:15px 17px;border-radius:0 12px 12px 0;font-weight:800;margin:18px 0}.warn{border-left-color:#d59024;background:var(--orange)}
+.mis{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:12px 0}.mis b{display:block;background:#fff4e4;color:#8b5b14;padding:12px 15px}.mis p{margin:0;padding:15px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px}.check{background:var(--green);border-radius:12px;padding:12px;font-weight:800}
+.next{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.next a{text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}.next small{color:var(--muted)}
+footer{background:var(--navy2);color:#fff;padding:28px 0}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.art{order:-1}.layout{grid-template-columns:1fr}.toc{position:static}.next{grid-template-columns:1fr}}
+@media(max-width:620px){.nav{display:none}.hero-grid{padding:34px 0}.sub{font-size:18px}.layout{padding-top:22px}.summary,.box{padding:20px}.split,.checks{grid-template-columns:1fr}h1{font-size:39px}h2{font-size:24px}}
+</style>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/><meta content="#0b3568" name="theme-color"/><meta content="light" name="color-scheme"/></head>
+<body>
+<header><div class="wrap head"><a class="brand" href="index.html">財政の見方</a><nav class="nav"><a href="index.html">トップ</a><a href="#summary">30秒まとめ</a><a href="sources.html">出典</a></nav></div></header>
+<section class="hero"><div class="wrap hero-grid">
+<div><span class="eyebrow">ARTICLE 01・基礎</span><h1>国債とは何か</h1><p class="sub">政府の負債であり、保有者の資産</p><div class="tags"><span class="tag">読了6分</span><span class="tag">初級</span><span class="tag">確認日 2026年7月</span></div></div>
+<div class="art"><svg aria-label="政府と国債保有者の関係図" viewbox="0 0 650 360">
+<rect fill="#f8fbff" height="360" rx="22" width="650"></rect>
+<path d="M70 180l110-74 110 74" fill="#d7ebff" stroke="#0b3568" stroke-width="5"></path><rect fill="#fff" height="100" stroke="#0b3568" stroke-width="5" width="176" x="92" y="180"></rect><rect fill="#0b3568" height="56" width="18" x="130" y="205"></rect><rect fill="#0b3568" height="56" width="18" x="172" y="205"></rect><rect fill="#0b3568" height="56" width="18" x="214" y="205"></rect><text fill="#0b3568" font-size="25" font-weight="900" text-anchor="middle" x="180" y="315">政府</text>
+<rect fill="#fff" height="135" rx="20" stroke="#2f7b4b" stroke-width="5" width="165" x="420" y="150"></rect><circle cx="465" cy="201" fill="#eaf6ed" r="22"></circle><circle cx="535" cy="201" fill="#eaf6ed" r="22"></circle><path d="M440 258c14-40 47-46 60-46s46 6 60 46" fill="#d9efdf"></path><text fill="#2f7b4b" font-size="22" font-weight="900" text-anchor="middle" x="502" y="315">銀行・保険・個人</text>
+<path d="M290 180h120" stroke="#3d82c6" stroke-width="8"></path><polygon fill="#3d82c6" points="410,180 388,168 388,192"></polygon><text fill="#3d82c6" font-size="18" font-weight="900" text-anchor="middle" x="350" y="160">国債</text>
+<path d="M410 235H290" stroke="#d59024" stroke-width="8"></path><polygon fill="#d59024" points="290,235 312,223 312,247"></polygon><text fill="#a66a15" font-size="18" font-weight="900" text-anchor="middle" x="350" y="270">資金</text>
+</svg></div></div></section>
+<div class="wrap layout">
+<aside class="toc"><strong>このページの内容</strong><a href="#summary">30秒で分かる結論</a><a href="#mechanism">基本の仕組み</a><a href="#twofaces">負債と資産</a><a href="#market">新発債と既発債</a><a href="#maturity">満期と途中売却</a><a href="#misunderstanding">よくある誤解</a><a href="#check">ニュースの見方</a><a href="sources.html">出典</a></aside>
+<article>
+<section class="summary" id="summary"><h2>30秒で分かる結論</h2><ul><li>国債は、国が資金を調達するために発行する債券です。</li><li>国は利子を支払い、満期には元本を返します。</li><li>政府から見ると負債、持っている側から見ると資産です。</li><li>誰かの資産でも、政府の支払い義務は残ります。</li></ul></section>
+<section class="box" id="mechanism"><h2>1. 国債の基本的な仕組み</h2><p>政府が国債を発行すると、購入者から資金を受け取ります。その代わり、決められた日に利子を支払い、満期に元本を返します。</p>
+<div class="figure"><svg viewbox="0 0 700 240"><rect fill="#fff" height="90" rx="15" stroke="#0b3568" stroke-width="4" width="145" x="25" y="70"></rect><text fill="#0b3568" font-size="25" font-weight="900" text-anchor="middle" x="97" y="124">政府</text><rect fill="#fff" height="90" rx="15" stroke="#2f7b4b" stroke-width="4" width="145" x="530" y="70"></rect><text fill="#2f7b4b" font-size="21" font-weight="900" text-anchor="middle" x="602" y="111">国債の</text><text fill="#2f7b4b" font-size="21" font-weight="900" text-anchor="middle" x="602" y="139">購入者</text><path d="M172 90h356" stroke="#3d82c6" stroke-width="7"></path><polygon fill="#3d82c6" points="528,90 508,79 508,101"></polygon><text fill="#3d82c6" font-size="17" font-weight="900" text-anchor="middle" x="350" y="72">国債</text><path d="M528 140H172" stroke="#d59024" stroke-width="7"></path><polygon fill="#d59024" points="172,140 192,129 192,151"></polygon><text fill="#a66a15" font-size="17" font-weight="900" text-anchor="middle" x="350" y="170">資金</text><path d="M172 205h356" stroke="#74a987" stroke-width="7"></path><polygon fill="#74a987" points="528,205 508,194 508,216"></polygon><text fill="#47795a" font-size="16" font-weight="900" text-anchor="middle" x="350" y="230">利子・満期時の元本</text></svg><div class="caption">国債と資金は逆方向に動き、後から利子と元本が支払われます。</div></div>
+<p><strong>満期</strong>は元本を返す期限、<strong>償還</strong>は元本を返すことです。</p></section>
+<section class="box" id="twofaces"><h2>2. 一つの国債には二つの顔がある</h2><div class="split"><div class="panel debt"><h3>政府から見ると「負債」</h3><p>利子を支払い、満期に元本を返す義務があります。</p></div><div class="panel asset"><h3>保有者から見ると「資産」</h3><p>利子と元本を受け取る権利があります。</p></div></div><div class="note">国債が誰かの資産であることは、政府の支払い義務がなくなることを意味しません。</div></section>
+<section class="box" id="market"><h2>3. 新しい国債と、中古の国債</h2><div class="split"><div class="panel" style="background:var(--blue)"><h3>新発債</h3><p>購入者のお金は政府に入ります。</p></div><div class="panel asset"><h3>既発債</h3><p>購入代金は原則として前の保有者に渡ります。</p></div></div><p>既発債を買っても、政府へ新しい資金が入るわけではありません。国債の持ち主が変わります。</p></section>
+<section class="box" id="maturity"><h2>4. 満期まで持つ場合と、途中で売る場合</h2><div class="split"><div class="panel asset"><h3>満期まで持つ</h3><p>決められた利子を受け取り、満期に元本を受け取ります。</p></div><div class="panel debt"><h3>途中で売る</h3><p>市場価格で売るため、購入価格より高い場合も安い場合もあります。</p></div></div><div class="note warn">一般に市場金利が上がると、すでに発行された低金利の国債価格は下がりやすくなります。</div></section>
+<section class="box" id="misunderstanding"><h2>5. よくある誤解</h2><div class="mis"><b>「国民一人ひとりが直接返す借金だ」</b><p>国債の返済義務を負うのは政府です。ただし、税や公共サービスを通じて国民生活とも関係します。</p></div><div class="mis"><b>「誰かの資産だから問題ない」</b><p>保有者にとって資産でも、政府には利子と元本を支払う義務があります。</p></div><div class="mis"><b>「満期まで持てば何も損をしない」</b><p>名目上の元本は受け取れても、インフレによって実質的な価値が下がる場合があります。</p></div></section>
+<section class="box" id="check"><h2>6. 国債ニュースを見るときの確認項目</h2><div class="checks"><div class="check">✓ 新発債か既発債か</div><div class="check">✓ 残高か発行額か</div><div class="check">✓ 元本か利払い費か</div><div class="check">✓ 表面利率か利回りか</div><div class="check">✓ 満期は何年か</div><div class="check">✓ 誰が保有しているか</div></div></section>
+<section class="box"><h2>次に読む記事</h2><div class="next"><a href="article-02-why.html"><strong>なぜ国は国債を発行するのか</strong><br/><small>発行目的を分けて理解する</small></a><a href="article-03-refinance.html"><strong>国債の満期と借換</strong><br/><small>満期後のお金の流れを見る</small></a><a href="article-04-holders.html"><strong>日本国債は誰が持つのか</strong><br/><small>日銀・銀行・海外を整理する</small></a></div></section>
+<section class="box" id="sources"><h2>主な出典</h2><ul><li>財務省「国債とは」</li><li>財務省「ご存知ですか？国債」</li><li>財務省「国債の表面利率・利回りに関するFAQ」</li><li>日本銀行「資金循環統計の概要」</li></ul><p><strong>内容確認日：</strong>2026年7月16日</p></section>
+</article>
+</div>
+<footer><div class="wrap"><strong>財政の見方</strong><br/><small>結論より先に、見るポイントを。</small><div class="site-links" style="margin-top:12px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px"><a href="index.html" style="color:white;text-decoration:none">トップ</a><a href="index.html#articles" style="color:white;text-decoration:none">記事一覧</a><a href="glossary.html" style="color:white;text-decoration:none">用語集</a><a href="sources.html" style="color:white;text-decoration:none">出典</a><a href="editorial.html" style="color:white;text-decoration:none">編集方針</a><a href="roadmap.html" style="color:white;text-decoration:none">今後追加する内容</a></div></div></footer>
+</body></html>

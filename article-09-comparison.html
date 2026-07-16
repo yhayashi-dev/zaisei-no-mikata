@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>各国の財政を比較するときに見る項目｜財政の見方</title>
+<style>
+:root{--navy:#0b3568;--navy2:#08264d;--blue:#eaf4ff;--green:#eaf6ed;--orange:#fff3de;--violet:#f2efff;--ink:#14253d;--muted:#617188;--line:#dce5ef;--bg:#f6f8fb}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8}
+a{color:inherit}.wrap{width:min(1120px,calc(100% - 28px));margin:auto}
+header{position:sticky;top:0;background:#fffffff2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}
+.head{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:22px;font-weight:900;color:var(--navy);text-decoration:none}.nav a{text-decoration:none;font-weight:800;font-size:14px;margin-left:20px}
+.hero{background:linear-gradient(135deg,#fff,#eef7ff 45%,#fff7eb);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center;padding:58px 0}
+.eyebrow{display:inline-block;background:#d7ebff;color:var(--navy);font-size:13px;font-weight:900;padding:7px 12px;border-radius:999px}
+h1{font-size:clamp(40px,4.8vw,62px);line-height:1.15;color:var(--navy2);margin:15px 0 10px}.sub{font-size:22px;font-weight:800;color:#40536b}
+.tags{display:flex;gap:8px;flex-wrap:wrap}.tag{font-size:12px;font-weight:900;background:#fff;border:1px solid #c7d6e6;border-radius:999px;padding:6px 10px}
+.art{background:#fff;border:1px solid var(--line);border-radius:24px;padding:16px;box-shadow:0 16px 40px #19365b18}.art svg{width:100%;display:block}
+.layout{display:grid;grid-template-columns:225px minmax(0,1fr);gap:34px;padding:40px 0 70px}.toc{position:sticky;top:92px;align-self:start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.toc strong{display:block;color:var(--navy2);margin-bottom:8px}.toc a{display:block;text-decoration:none;color:#506078;font-size:14px;padding:5px 0}
+article{max-width:800px}.summary,.box{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;margin-bottom:22px}
+.summary{background:linear-gradient(135deg,var(--blue),#fff)}h2{font-size:28px;line-height:1.35;color:var(--navy2);margin:0 0 15px}.summary h2{font-size:30px}
+.figure{background:#f9fbfd;border:1px solid var(--line);border-radius:17px;padding:18px;margin:18px 0}.figure svg{width:100%;display:block}.caption{font-size:13px;color:var(--muted);margin-top:8px}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.metric{border-radius:15px;padding:17px;border:1px solid var(--line)}.metric:nth-child(1){background:var(--blue)}.metric:nth-child(2){background:var(--green)}.metric:nth-child(3){background:var(--orange)}.metric:nth-child(4){background:var(--violet)}.metric:nth-child(5){background:#edf4f5}.metric:nth-child(6){background:#fff8ec}.metric h3{margin:0 0 6px;color:var(--navy2);font-size:19px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel{border-radius:15px;padding:18px}.panel h3{margin:0 0 7px;color:var(--navy2)}.left{background:var(--blue)}.right{background:var(--green)}.warn{background:var(--orange)}.violet{background:var(--violet)}
+.note{border-left:5px solid #3d82c6;background:var(--blue);padding:15px 17px;border-radius:0 12px 12px 0;font-weight:800;margin:18px 0}.orange{border-left-color:#d59024;background:var(--orange)}
+.compare-table{width:100%;border-collapse:collapse;font-size:15px}.compare-table th,.compare-table td{border-bottom:1px solid var(--line);padding:12px 10px;text-align:left}.compare-table th{background:#f2f6fa;color:var(--navy2)}
+.mis{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:12px 0}.mis b{display:block;background:#fff4e4;color:#8b5b14;padding:12px 15px}.mis p{margin:0;padding:15px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px}.check{background:var(--green);border-radius:12px;padding:12px;font-weight:800}
+.next{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.next a{text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}.next small{color:var(--muted)}
+footer{background:var(--navy2);color:#fff;padding:28px 0}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.art{order:-1}.layout{grid-template-columns:1fr}.toc{position:static}.next{grid-template-columns:1fr}.metric-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.nav{display:none}.hero-grid{padding:34px 0}.sub{font-size:18px}.layout{padding-top:22px}.summary,.box{padding:20px}.split,.checks,.metric-grid{grid-template-columns:1fr}h1{font-size:38px}h2{font-size:24px}.compare-table{font-size:13px}}
+</style>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/><meta content="#0b3568" name="theme-color"/><meta content="light" name="color-scheme"/></head>
+<body>
+<header><div class="wrap head"><a class="brand" href="index.html">財政の見方</a><nav class="nav"><a href="index.html">トップ</a><a href="#summary">30秒まとめ</a><a href="sources.html">出典</a></nav></div></header>
+<section class="hero"><div class="wrap hero-grid">
+<div><span class="eyebrow">ARTICLE 09・国際比較</span><h1>各国の財政を比較するときに見る項目</h1><p class="sub">政府債務のGDP比だけでは、違いは分かりません</p><div class="tags"><span class="tag">読了10分</span><span class="tag">中級</span><span class="tag">確認日 2026年7月</span></div></div>
+<div class="art"><svg aria-label="各国の財政を複数項目で比較する図" viewbox="0 0 650 390">
+<rect fill="#f8fbff" height="390" rx="22" width="650"></rect>
+<circle cx="325" cy="75" fill="#0b3568" r="52"></circle><text fill="#fff" font-size="20" font-weight="900" text-anchor="middle" x="325" y="69">国別</text><text fill="#fff" font-size="20" font-weight="900" text-anchor="middle" x="325" y="96">比較</text>
+<rect fill="#eaf4ff" height="95" rx="18" stroke="#3d82c6" stroke-width="4" width="105" x="35" y="185"></rect><text fill="#0b3568" font-size="17" font-weight="900" text-anchor="middle" x="87" y="220">債務</text><text fill="#4c6078" font-size="14" font-weight="800" text-anchor="middle" x="87" y="246">粗・純</text>
+<rect fill="#eaf6ed" height="95" rx="18" stroke="#2f7b4b" stroke-width="4" width="105" x="155" y="185"></rect><text fill="#2f7b4b" font-size="17" font-weight="900" text-anchor="middle" x="207" y="220">通貨</text><text fill="#4c6078" font-size="14" font-weight="800" text-anchor="middle" x="207" y="246">自国・外貨</text>
+<rect fill="#fff3de" height="95" rx="18" stroke="#d59024" stroke-width="4" width="105" x="275" y="185"></rect><text fill="#8d5b13" font-size="17" font-weight="900" text-anchor="middle" x="327" y="220">金利</text><text fill="#4c6078" font-size="14" font-weight="800" text-anchor="middle" x="327" y="246">利払い</text>
+<rect fill="#f2efff" height="95" rx="18" stroke="#7162b7" stroke-width="4" width="105" x="395" y="185"></rect><text fill="#56459e" font-size="17" font-weight="900" text-anchor="middle" x="447" y="220">保有者</text><text fill="#4c6078" font-size="14" font-weight="800" text-anchor="middle" x="447" y="246">国内・海外</text>
+<rect fill="#edf4f5" height="95" rx="18" stroke="#4c8191" stroke-width="4" width="100" x="515" y="185"></rect><text fill="#356572" font-size="17" font-weight="900" text-anchor="middle" x="565" y="220">経済</text><text fill="#4c6078" font-size="14" font-weight="800" text-anchor="middle" x="565" y="246">成長・物価</text>
+<path d="M300 119L87 185M313 126L207 185M325 127v58M337 126L447 185M350 119L565 185" stroke="#8798aa" stroke-width="5"></path>
+<rect fill="#fff" height="45" rx="13" width="290" x="180" y="315"></rect><text fill="#0b3568" font-size="17" font-weight="900" text-anchor="middle" x="325" y="344">一つの順位ではなく、組み合わせで見る</text>
+</svg></div></div></section>
+<div class="wrap layout">
+<aside class="toc"><strong>このページの内容</strong><a href="#summary">30秒で分かる結論</a><a href="#gdp">GDP比</a><a href="#scope">政府の範囲</a><a href="#gross-net">粗債務と純債務</a><a href="#currency">通貨と中央銀行</a><a href="#market">金利・満期・保有者</a><a href="#whole-country">国全体の状況</a><a href="#format">共通フォーマット</a><a href="sources.html">出典</a></aside>
+<article>
+<section class="summary" id="summary"><h2>30秒で分かる結論</h2><ul><li>政府債務GDP比は重要ですが、一つの指標にすぎません。</li><li>中央政府だけか、地方政府や社会保障基金も含むかで数字は変わります。</li><li>粗債務・純債務、通貨、金利、満期、保有者構成も確認します。</li><li>家計債務、企業債務、対外資産まで見ると国全体の特徴が分かります。</li></ul></section>
+<section class="box" id="gdp"><h2>1. 金額ではなく、まず経済規模と比べる</h2>
+<div class="split"><div class="panel left"><h3>国A</h3><p>政府債務1,000兆円、GDP5,000兆円。債務GDP比20％。</p></div><div class="panel warn"><h3>国B</h3><p>政府債務100兆円、GDP200兆円。債務GDP比50％。</p></div></div>
+<div class="note">債務額が大きい国が、必ず経済規模に対して重い負担を持つとは限りません。</div>
+<p>ただし、GDPは一年間の経済活動を示すフロー、政府債務は積み上がったストックです。GDP比だけで全てが分かるわけではありません。</p></section>
+<section class="box" id="scope"><h2>2. 最初に政府の範囲をそろえる</h2>
+<div class="figure"><svg viewbox="0 0 700 250">
+<rect fill="#eaf4ff" height="100" rx="18" width="180" x="35" y="75"></rect><text fill="#0b3568" font-size="21" font-weight="900" text-anchor="middle" x="125" y="113">中央政府</text><text fill="#4c6078" font-size="16" font-weight="800" text-anchor="middle" x="125" y="145">国</text>
+<text fill="#0b3568" font-size="35" font-weight="900" text-anchor="middle" x="245" y="137">＋</text>
+<rect fill="#eaf6ed" height="100" rx="18" width="180" x="275" y="75"></rect><text fill="#2f7b4b" font-size="21" font-weight="900" text-anchor="middle" x="365" y="113">地方政府</text><text fill="#4c6078" font-size="16" font-weight="800" text-anchor="middle" x="365" y="145">自治体</text>
+<text fill="#0b3568" font-size="35" font-weight="900" text-anchor="middle" x="485" y="137">＋</text>
+<rect fill="#fff3de" height="100" rx="18" width="150" x="515" y="75"></rect><text fill="#8d5b13" font-size="19" font-weight="900" text-anchor="middle" x="590" y="113">社会保障基金</text><text fill="#4c6078" font-size="15" font-weight="800" text-anchor="middle" x="590" y="145">公的年金など</text>
+<rect fill="#f2efff" height="40" rx="12" width="210" x="245" y="200"></rect><text fill="#56459e" font-size="18" font-weight="900" text-anchor="middle" x="350" y="226">＝ 一般政府</text>
+</svg></div>
+<p>国際比較では、一般政府の数字がよく使われます。中央政府だけの数字と直接比べないようにします。</p></section>
+<section class="box" id="gross-net"><h2>3. 粗債務と純債務を分ける</h2><div class="split"><div class="panel left"><h3>粗債務</h3><p>政府の金融資産を差し引く前の負債。</p></div><div class="panel right"><h3>純債務</h3><p>一定の金融資産を差し引いた負債。</p></div></div>
+<div class="note orange">どの資産を差し引くかは、IMFやOECDなどの定義で異なる場合があります。</div></section>
+<section class="box" id="currency"><h2>4. 通貨と中央銀行の制度を見る</h2><div class="split"><div class="panel right"><h3>独自通貨を持つ国</h3><p>日本円、米ドル、英ポンド、韓国ウォンなど。</p></div><div class="panel violet"><h3>共通通貨を使う国</h3><p>フランスやイタリアなどのユーロ圏。各国政府が単独でユーロを発行するわけではありません。</p></div></div>
+<p>同じ政府債務GDP比でも、自国通貨建て中心か、外貨建てが多いかで条件は変わります。</p></section>
+<section class="box" id="market"><h2>5. 金利・満期・保有者を見る</h2><div class="metric-grid">
+<div class="metric"><h3>平均金利</h3><p>政府が実際にどれだけ利子を払っているか。</p></div>
+<div class="metric"><h3>新発債金利</h3><p>今後の借換負担に影響。</p></div>
+<div class="metric"><h3>平均満期</h3><p>金利変化がどの速さで波及するか。</p></div>
+<div class="metric"><h3>借換額</h3><p>一年以内にどれだけ再調達が必要か。</p></div>
+<div class="metric"><h3>国内保有</h3><p>銀行・保険・年金などの需要。</p></div>
+<div class="metric"><h3>海外保有</h3><p>国際需要と市場変動への感応度。</p></div>
+</div>
+<div class="note">債務残高が高くても低金利・長期満期の国と、債務残高が低くても高金利・短期満期の国では状況が異なります。</div></section>
+<section class="box" id="whole-country"><h2>6. 政府だけでなく、国全体も見る</h2>
+<table class="compare-table">
+<thead><tr><th>項目</th><th>見る理由</th></tr></thead>
+<tbody>
+<tr><td>対外純資産・負債</td><td>海外との資産・負債関係を見る</td></tr>
+<tr><td>経常収支</td><td>外貨が入る構造かを見る</td></tr>
+<tr><td>外貨準備</td><td>外貨建て債務への備えを見る</td></tr>
+<tr><td>家計債務</td><td>住宅ローンなどの脆弱性を見る</td></tr>
+<tr><td>企業債務</td><td>金利上昇や景気悪化への耐性を見る</td></tr>
+<tr><td>人口・社会保障</td><td>将来の税収と支出を見る</td></tr>
+</tbody></table>
+</section>
+<section class="box" id="format"><h2>7. 「財政の健康診断」の共通フォーマット</h2>
+<div class="figure"><svg viewbox="0 0 700 340">
+<rect fill="#fff" height="290" rx="22" stroke="#0b3568" stroke-width="4" width="640" x="30" y="25"></rect>
+<text fill="#0b3568" font-size="22" font-weight="900" x="60" y="62">財政の健康診断票</text>
+<rect fill="#eaf4ff" height="55" rx="12" width="180" x="55" y="85"></rect><text fill="#0b3568" font-size="17" font-weight="900" text-anchor="middle" x="145" y="119">通貨・中央銀行</text>
+<rect fill="#eaf6ed" height="55" rx="12" width="180" x="260" y="85"></rect><text fill="#2f7b4b" font-size="17" font-weight="900" text-anchor="middle" x="350" y="119">粗債務・純債務</text>
+<rect fill="#fff3de" height="55" rx="12" width="150" x="465" y="85"></rect><text fill="#8d5b13" font-size="17" font-weight="900" text-anchor="middle" x="540" y="119">金利・利払い</text>
+<rect fill="#f2efff" height="55" rx="12" width="180" x="55" y="165"></rect><text fill="#56459e" font-size="17" font-weight="900" text-anchor="middle" x="145" y="199">保有者・満期</text>
+<rect fill="#edf4f5" height="55" rx="12" width="180" x="260" y="165"></rect><text fill="#356572" font-size="17" font-weight="900" text-anchor="middle" x="350" y="199">成長・物価・税収</text>
+<rect fill="#fff8ec" height="55" rx="12" width="150" x="465" y="165"></rect><text fill="#8a5a13" font-size="17" font-weight="900" text-anchor="middle" x="540" y="199">対外・家計債務</text>
+<rect fill="#0b3568" height="42" rx="12" width="410" x="145" y="250"></rect><text fill="#fff" font-size="18" font-weight="900" text-anchor="middle" x="350" y="277">強み・注意点・今後見る指標を分けて表示</text>
+</svg></div>
+<p>各国を同じ項目で見れば、「債務GDP比ランキング」だけでは分からない特徴を比較できます。</p></section>
+<section class="box"><h2>8. 日本・アメリカ・イタリアの違い</h2>
+<table class="compare-table">
+<thead><tr><th>国</th><th>通貨制度</th><th>比較で見る特徴</th></tr></thead>
+<tbody>
+<tr><td>日本</td><td>独自通貨・日本銀行</td><td>円建て中心、日銀保有、高齢化</td></tr>
+<tr><td>アメリカ</td><td>独自通貨・FRB</td><td>巨大な国債市場、ドルの国際性、赤字と利払い</td></tr>
+<tr><td>イタリア</td><td>ユーロ圏・ECB</td><td>高い政府債務、成長率、国債金利、EUルール</td></tr>
+</tbody></table>
+</section>
+<section class="box"><h2>9. よくある誤解</h2>
+<div class="mis"><b>「政府債務GDP比が最も高い国が最も危険」</b><p>通貨、金利、満期、保有者、成長率、対外資産なども確認する必要があります。</p></div>
+<div class="mis"><b>「純債務を見れば全て分かる」</b><p>差し引く資産の定義や、将来の年金・医療支出は別に確認します。</p></div>
+<div class="mis"><b>「自国通貨建てならどの国も同じ」</b><p>通貨への信頼、市場規模、中央銀行制度、資本移動などは国によって異なります。</p></div>
+</section>
+<section class="box"><h2>国際比較を見るときの確認項目</h2><div class="checks"><div class="check">✓ 同じ年か</div><div class="check">✓ 同じ統計機関か</div><div class="check">✓ 一般政府か中央政府か</div><div class="check">✓ 粗債務か純債務か</div><div class="check">✓ 通貨と中央銀行は何か</div><div class="check">✓ 金利・満期・保有者はどうか</div></div></section>
+<section class="box"><h2>次に読む記事</h2><div class="next"><a href="#"><strong>財政ニュースの読み方</strong><br/><small>数字の見出しをどう確認するか</small></a><a href="#"><strong>財政の健康診断</strong><br/><small>同じ項目で国別に比べる</small></a><a href="article-05-wallets.html"><strong>政府の財布と日本全体の財布</strong><br/><small>政府と国全体を分ける</small></a></div></section>
+<section class="box" id="sources"><h2>主な出典</h2><ul><li>IMF「Fiscal Monitor Database」</li><li>OECD「General government debt」</li><li>OECD「General government financial wealth」</li><li>IMF・世界銀行「Guidelines for Public Debt Management」</li></ul><p><strong>内容確認日：</strong>2026年7月16日</p></section>
+</article>
+</div>
+<footer><div class="wrap"><strong>財政の見方</strong><br/><small>結論より先に、見るポイントを。</small><div class="site-links" style="margin-top:12px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px"><a href="index.html" style="color:white;text-decoration:none">トップ</a><a href="index.html#articles" style="color:white;text-decoration:none">記事一覧</a><a href="glossary.html" style="color:white;text-decoration:none">用語集</a><a href="sources.html" style="color:white;text-decoration:none">出典</a><a href="editorial.html" style="color:white;text-decoration:none">編集方針</a><a href="roadmap.html" style="color:white;text-decoration:none">今後追加する内容</a></div></div></footer>
+</body></html>

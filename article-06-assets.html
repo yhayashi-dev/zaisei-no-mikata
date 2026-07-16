@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>政府の資産は、国債を返すためのお金なのか｜財政の見方</title>
+<style>
+:root{--navy:#0b3568;--navy2:#08264d;--blue:#eaf4ff;--green:#eaf6ed;--orange:#fff3de;--violet:#f2efff;--ink:#14253d;--muted:#617188;--line:#dce5ef;--bg:#f6f8fb}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8}
+a{color:inherit}.wrap{width:min(1120px,calc(100% - 28px));margin:auto}
+header{position:sticky;top:0;background:#fffffff2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}
+.head{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:22px;font-weight:900;color:var(--navy);text-decoration:none}.nav a{text-decoration:none;font-weight:800;font-size:14px;margin-left:20px}
+.hero{background:linear-gradient(135deg,#fff,#fff6e8 48%,#eef7ff);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center;padding:58px 0}
+.eyebrow{display:inline-block;background:#ffe5b8;color:#8a5a13;font-size:13px;font-weight:900;padding:7px 12px;border-radius:999px}
+h1{font-size:clamp(40px,4.8vw,62px);line-height:1.15;color:var(--navy2);margin:15px 0 10px}.sub{font-size:22px;font-weight:800;color:#40536b}
+.tags{display:flex;gap:8px;flex-wrap:wrap}.tag{font-size:12px;font-weight:900;background:#fff;border:1px solid #c7d6e6;border-radius:999px;padding:6px 10px}
+.art{background:#fff;border:1px solid var(--line);border-radius:24px;padding:16px;box-shadow:0 16px 40px #19365b18}.art svg{width:100%;display:block}
+.layout{display:grid;grid-template-columns:225px minmax(0,1fr);gap:34px;padding:40px 0 70px}.toc{position:sticky;top:92px;align-self:start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.toc strong{display:block;color:var(--navy2);margin-bottom:8px}.toc a{display:block;text-decoration:none;color:#506078;font-size:14px;padding:5px 0}
+article{max-width:800px}.summary,.box{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;margin-bottom:22px}
+.summary{background:linear-gradient(135deg,var(--orange),#fff)}h2{font-size:28px;line-height:1.35;color:var(--navy2);margin:0 0 15px}.summary h2{font-size:30px}
+.figure{background:#f9fbfd;border:1px solid var(--line);border-radius:17px;padding:18px;margin:18px 0}.figure svg{width:100%;display:block}.caption{font-size:13px;color:var(--muted);margin-top:8px}
+.asset-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.asset{border-radius:16px;padding:19px;border:1px solid var(--line)}.asset:nth-child(1){background:var(--green)}.asset:nth-child(2){background:var(--orange)}.asset:nth-child(3){background:var(--blue)}.asset h3{margin:0 0 8px;color:var(--navy2);font-size:20px}
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{border-radius:15px;padding:17px;text-align:center}.stat strong{display:block;font-size:28px;color:var(--navy2)}.stat:nth-child(1){background:var(--green)}.stat:nth-child(2){background:var(--orange)}.stat:nth-child(3){background:var(--violet)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel{border-radius:15px;padding:18px}.panel h3{margin:0 0 7px;color:var(--navy2)}.left{background:var(--blue)}.right{background:var(--green)}.warn{background:var(--orange)}
+.note{border-left:5px solid #d59024;background:var(--orange);padding:15px 17px;border-radius:0 12px 12px 0;font-weight:800;margin:18px 0}.blue{border-left-color:#3d82c6;background:var(--blue)}
+.mis{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:12px 0}.mis b{display:block;background:#fff4e4;color:#8b5b14;padding:12px 15px}.mis p{margin:0;padding:15px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px}.check{background:var(--green);border-radius:12px;padding:12px;font-weight:800}
+.next{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.next a{text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}.next small{color:var(--muted)}
+footer{background:var(--navy2);color:#fff;padding:28px 0}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.art{order:-1}.layout{grid-template-columns:1fr}.toc{position:static}.next{grid-template-columns:1fr}.asset-grid,.stat-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.nav{display:none}.hero-grid{padding:34px 0}.sub{font-size:18px}.layout{padding-top:22px}.summary,.box{padding:20px}.split,.checks{grid-template-columns:1fr}h1{font-size:38px}h2{font-size:24px}}
+</style>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/><meta content="#0b3568" name="theme-color"/><meta content="light" name="color-scheme"/></head>
+<body>
+<header><div class="wrap head"><a class="brand" href="index.html">財政の見方</a><nav class="nav"><a href="index.html">トップ</a><a href="#summary">30秒まとめ</a><a href="sources.html">出典</a></nav></div></header>
+<section class="hero"><div class="wrap hero-grid">
+<div><span class="eyebrow">ARTICLE 06・日本の財政</span><h1>政府の資産は、国債を返すためのお金なのか</h1><p class="sub">政府資産を見るときに知っておきたいこと</p><div class="tags"><span class="tag">読了7分</span><span class="tag">初級</span><span class="tag">基準 2024年度末</span></div></div>
+<div class="art"><svg aria-label="政府資産を三つの性質に分けた図" viewbox="0 0 650 390">
+<rect fill="#f8fbff" height="390" rx="22" width="650"></rect>
+<circle cx="325" cy="85" fill="#0b3568" r="60"></circle><text fill="#fff" font-size="21" font-weight="900" text-anchor="middle" x="325" y="78">政府の</text><text fill="#fff" font-size="21" font-weight="900" text-anchor="middle" x="325" y="106">資産</text>
+<rect fill="#eaf6ed" height="115" rx="20" stroke="#2f7b4b" stroke-width="4" width="170" x="40" y="210"></rect><text fill="#2f7b4b" font-size="19" font-weight="900" text-anchor="middle" x="125" y="245">比較的換金しやすい</text><text fill="#4c6078" font-size="15" font-weight="800" text-anchor="middle" x="125" y="275">現金・預金</text><text fill="#4c6078" font-size="15" font-weight="800" text-anchor="middle" x="125" y="298">一部の有価証券</text>
+<rect fill="#fff3de" height="115" rx="20" stroke="#d59024" stroke-width="4" width="170" x="240" y="210"></rect><text fill="#8d5b13" font-size="19" font-weight="900" text-anchor="middle" x="325" y="245">条件付き</text><text fill="#4c6078" font-size="15" font-weight="800" text-anchor="middle" x="325" y="275">貸付金・出資金</text><text fill="#4c6078" font-size="15" font-weight="800" text-anchor="middle" x="325" y="298">政策目的あり</text>
+<rect fill="#eaf4ff" height="115" rx="20" stroke="#3d82c6" stroke-width="4" width="170" x="440" y="210"></rect><text fill="#0b3568" font-size="19" font-weight="900" text-anchor="middle" x="525" y="245">行政に必要</text><text fill="#4c6078" font-size="15" font-weight="800" text-anchor="middle" x="525" y="275">道路・建物</text><text fill="#4c6078" font-size="15" font-weight="800" text-anchor="middle" x="525" y="298">土地・公共施設</text>
+<path d="M290 135L150 210M325 145v65M360 135l140 75" stroke="#8a9bad" stroke-width="5"></path>
+</svg></div></div></section>
+<div class="wrap layout">
+<aside class="toc"><strong>このページの内容</strong><a href="#summary">30秒で分かる結論</a><a href="#types">資産の種類</a><a href="#balance">国の貸借対照表</a><a href="#liquidity">売りやすさの違い</a><a href="#gross-net">粗債務と純債務</a><a href="#limits">なぜ全部使えないか</a><a href="#misunderstanding">よくある誤解</a><a href="sources.html">出典</a></aside>
+<article>
+<section class="summary" id="summary"><h2>30秒で分かる結論</h2><ul><li>日本政府には多くの資産があります。</li><li>ただし、そのすべてが自由に売却できる資産ではありません。</li><li>道路や庁舎など、行政サービスに必要な資産も含まれます。</li><li>負債だけでも、資産だけでもなく、両方の性質を見る必要があります。</li></ul></section>
+<section class="box" id="types"><h2>1. 政府資産には性質の違いがある</h2><div class="asset-grid">
+<div class="asset"><h3>比較的換金しやすい</h3><p>現金・預金、一部の有価証券など。</p></div>
+<div class="asset"><h3>条件によって扱いが変わる</h3><p>貸付金、出資金、政府保有株式など。</p></div>
+<div class="asset"><h3>行政サービスに必要</h3><p>道路、庁舎、土地、公共施設など。</p></div>
+</div>
+<div class="note">「資産がある」ことと、「その全額を明日から国債返済に使える」ことは同じではありません。</div>
+</section>
+<section class="box" id="balance"><h2>2. 国の貸借対照表を見る</h2>
+<div class="stat-grid"><div class="stat"><span>資産合計</span><strong>783.4兆円</strong></div><div class="stat"><span>負債合計</span><strong>1,483.3兆円</strong></div><div class="stat"><span>資産・負債差額</span><strong>▲699.9兆円</strong></div></div>
+<p>財務省の令和6年度「国の財務書類」による、2024年度末の数字です。</p>
+<div class="note blue">この財務書類は、企業会計の考え方を参考に、国の資産・負債などを一覧で示したものです。</div>
+</section>
+<section class="box" id="liquidity"><h2>3. 資産には「売りやすさ」の違いがある</h2>
+<div class="figure"><svg viewbox="0 0 700 260">
+<text fill="#2f7b4b" font-size="18" font-weight="900" x="50" y="42">換金しやすい</text><text fill="#0b3568" font-size="18" font-weight="900" x="570" y="42">売りにくい・行政に必要</text>
+<rect fill="#eaf6ed" height="110" rx="18" width="130" x="50" y="75"></rect><text fill="#2f7b4b" font-size="18" font-weight="900" text-anchor="middle" x="115" y="120">現金</text><text fill="#4c6078" font-size="16" font-weight="800" text-anchor="middle" x="115" y="150">預金</text>
+<rect fill="#fff3de" height="110" rx="18" width="130" x="210" y="75"></rect><text fill="#8d5b13" font-size="18" font-weight="900" text-anchor="middle" x="275" y="120">株式</text><text fill="#4c6078" font-size="16" font-weight="800" text-anchor="middle" x="275" y="150">貸付金</text>
+<rect fill="#f2efff" height="110" rx="18" width="130" x="370" y="75"></rect><text fill="#56459e" font-size="18" font-weight="900" text-anchor="middle" x="435" y="120">土地</text><text fill="#4c6078" font-size="16" font-weight="800" text-anchor="middle" x="435" y="150">庁舎</text>
+<rect fill="#eaf4ff" height="110" rx="18" width="130" x="530" y="75"></rect><text fill="#0b3568" font-size="18" font-weight="900" text-anchor="middle" x="595" y="120">道路</text><text fill="#4c6078" font-size="16" font-weight="800" text-anchor="middle" x="595" y="150">公共施設</text>
+<path d="M115 215h480" stroke="#7d8fa3" stroke-width="6"></path><polygon fill="#7d8fa3" points="595,215 573,203 573,227"></polygon>
+</svg><div class="caption">これは資産の性質を示す概念図で、実際の金額割合ではありません。</div></div>
+</section>
+<section class="box" id="gross-net"><h2>4. 粗債務と純債務</h2>
+<div class="split"><div class="panel left"><h3>粗債務</h3><p>資産を差し引く前の負債です。</p></div><div class="panel right"><h3>純債務</h3><p>一定の金融資産を負債から差し引いた指標です。</p></div></div>
+<p>どの資産を差し引くかは、IMFやOECDなどの統計定義によって異なる場合があります。</p>
+<div class="note blue">道路や庁舎などの非金融資産を、純債務の計算で差し引かない統計もあります。</div>
+</section>
+<section class="box" id="limits"><h2>5. なぜ資産を全部使えないのか</h2>
+<div class="split"><div class="panel right"><h3>売れば収入になる場合</h3><p>一部の株式や土地などは、政策判断により売却されることがあります。</p></div><div class="panel warn"><h3>売ると機能を失う場合</h3><p>道路、庁舎、防災施設などは、売却すれば行政サービスに影響します。</p></div></div>
+<ul><li>政策目的を持つ資産がある</li><li>売却価格が変動する</li><li>一度売れば将来の収益を失う場合がある</li><li>売却に法律・契約・市場上の制約がある</li></ul>
+</section>
+<section class="box" id="misunderstanding"><h2>6. よくある誤解</h2>
+<div class="mis"><b>「政府には資産があるので国債は問題ない」</b><p>資産は重要ですが、すべてを自由に売却できず、利払いと借換も続きます。</p></div>
+<div class="mis"><b>「負債だけ見れば十分」</b><p>政府が持つ金融資産や非金融資産を無視すると、全体像が分かりません。</p></div>
+<div class="mis"><b>「道路には価値がない」</b><p>市場で売りにくくても、経済活動や生活を支える公共資産として価値があります。</p></div>
+</section>
+<section class="box"><h2>政府資産ニュースの確認項目</h2><div class="checks"><div class="check">✓ 現金か有価証券か</div><div class="check">✓ 道路や公共施設を含むか</div><div class="check">✓ 売却可能か</div><div class="check">✓ 時価か帳簿価格か</div><div class="check">✓ 粗債務か純債務か</div><div class="check">✓ 基準日はいつか</div></div></section>
+<section class="box"><h2>次に読む記事</h2><div class="next"><a href="article-07-own-currency.html"><strong>自国通貨建て国債なら安全か</strong><br/><small>通貨と財政の関係を見る</small></a><a href="article-08-interest.html"><strong>金利が上がると何が起きるか</strong><br/><small>利払い負担を見る</small></a><a href="article-09-comparison.html"><strong>各国の財政をどう比べるか</strong><br/><small>粗債務と純債務を比較する</small></a></div></section>
+<section class="box" id="sources"><h2>主な出典</h2><ul><li>財務省「令和6年度 国の財務書類」</li><li>財務省「令和6年度 国の財務書類のポイント」</li><li>IMF「Fiscal Monitor Glossary」</li></ul><p><strong>内容確認日：</strong>2026年7月16日<br/><strong>数字の基準時点：</strong>2024年度末</p></section>
+</article>
+</div>
+<footer><div class="wrap"><strong>財政の見方</strong><br/><small>結論より先に、見るポイントを。</small><div class="site-links" style="margin-top:12px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px"><a href="index.html" style="color:white;text-decoration:none">トップ</a><a href="index.html#articles" style="color:white;text-decoration:none">記事一覧</a><a href="glossary.html" style="color:white;text-decoration:none">用語集</a><a href="sources.html" style="color:white;text-decoration:none">出典</a><a href="editorial.html" style="color:white;text-decoration:none">編集方針</a><a href="roadmap.html" style="color:white;text-decoration:none">今後追加する内容</a></div></div></footer>
+</body></html>

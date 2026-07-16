@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>主な出典・資料｜財政の見方</title>
+<style>
+:root{--navy:#0b3568;--navy2:#08264d;--blue:#eaf4ff;--green:#eaf6ed;--orange:#fff3de;--violet:#f2efff;--ink:#14253d;--muted:#617188;--line:#dce5ef;--bg:#f6f8fb}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.75}
+a{color:inherit}.wrap{width:min(1120px,calc(100% - 28px));margin:auto}
+header{position:sticky;top:0;background:#fffffff2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}
+.head{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:22px;font-weight:900;color:var(--navy);text-decoration:none}.nav a{text-decoration:none;font-weight:800;font-size:14px;margin-left:20px}
+.hero{background:linear-gradient(135deg,#fff,#edf6ff 48%,#f3f9f4);border-bottom:1px solid var(--line)}
+.hero-in{padding:56px 0 44px}.eyebrow{display:inline-block;background:#d7ebff;color:var(--navy);font-size:13px;font-weight:900;padding:7px 12px;border-radius:999px}
+h1{font-size:clamp(42px,5vw,64px);line-height:1.15;color:var(--navy2);margin:15px 0 12px}.lead{font-size:18px;color:#44576f;max-width:780px}
+.main{padding:40px 0 70px}.policy{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;margin-bottom:24px}
+.policy h2{margin:0 0 10px;color:var(--navy2);font-size:27px}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:18px}
+.step{border-radius:14px;padding:14px;text-align:center;font-weight:900}
+.step:nth-child(1){background:var(--blue)}.step:nth-child(2){background:var(--green)}.step:nth-child(3){background:var(--orange)}.step:nth-child(4){background:var(--violet)}.step:nth-child(5){background:#edf4f5}
+.search{margin:24px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 16px;display:flex;gap:10px;box-shadow:0 12px 30px #19365b12}
+.search input{width:100%;border:0;outline:0;font-size:17px;background:transparent}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 5px 16px #19365b0b}
+.card h2{margin:0 0 8px;font-size:24px;color:var(--navy2)}
+.card p{margin:0 0 12px;color:#4f6077}
+.tag{display:inline-block;font-size:12px;font-weight:900;border-radius:999px;padding:5px 9px;margin:3px 4px 3px 0;background:var(--blue);color:var(--navy)}
+.uses{margin:14px 0 0;padding-left:20px}.uses li{margin-bottom:5px}
+.notice{background:var(--orange);border-left:5px solid #d59024;border-radius:0 13px 13px 0;padding:16px 18px;margin:24px 0;font-weight:800}
+.hidden{display:none}.count{font-weight:900;color:var(--navy);margin-bottom:15px}
+footer{background:var(--navy2);color:#fff;padding:28px 0}
+@media(max-width:850px){.steps{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}}
+@media(max-width:620px){.nav{display:none}.hero-in{padding:36px 0}h1{font-size:39px}.steps{grid-template-columns:1fr}}
+</style>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/><meta content="#0b3568" name="theme-color"/><meta content="light" name="color-scheme"/></head>
+<body>
+<header><div class="wrap head"><a class="brand" href="index.html">財政の見方</a><nav class="nav"><a href="index.html">トップ</a><a href="index.html#articles">記事一覧</a><a href="glossary.html">用語集</a></nav></div></header>
+<section class="hero"><div class="wrap hero-in">
+<span class="eyebrow">一次資料への入口</span>
+<h1>主な出典・資料</h1>
+<p class="lead">このサイトでは、制度や数字を説明するとき、できるだけ公的資料と一次資料を確認します。ここでは「どの機関を、何の確認に使うか」を整理しています。</p>
+</div></section>
+<main class="wrap main">
+<section class="policy">
+<h2>出典の基本方針</h2>
+<p>重要な事実ほど、元の資料まで戻って確認します。新聞や動画は、論点を知るための補助資料として扱います。</p>
+<div class="steps">
+<div class="step">法律・政府資料</div><div class="step">中央銀行・統計</div><div class="step">国際機関</div><div class="step">大学・研究機関</div><div class="step">報道・書籍・動画</div>
+</div>
+</section>
+<div class="search"><span>🔎</span><input id="q" placeholder="例：国債保有者、GDP、純債務、インフレ" type="search"/></div>
+<div class="count" id="count">10機関を表示</div>
+<section class="grid">
+<article class="card"><h2>財務省</h2><p>日本の予算、国債、税制、国の財務書類を確認する中心資料です。</p><span class="tag">国債残高</span><span class="tag">予算</span><span class="tag">税収</span><span class="tag">政府資産</span>
+<ul class="uses"><li>国債・借入金残高</li><li>債務管理リポート</li><li>国の財務書類</li><li>対外資産・負債</li></ul></article>
+<article class="card"><h2>日本銀行</h2><p>国債保有者、政策金利、日銀当座預金、金融システムを確認します。</p><span class="tag">資金循環</span><span class="tag">金利</span><span class="tag">日銀保有</span>
+<ul class="uses"><li>資金循環統計</li><li>国債価格と利回り</li><li>日本銀行の決算</li><li>金融システムレポート</li></ul></article>
+<article class="card"><h2>内閣府</h2><p>GDP、国民経済計算、国富、制度部門別の資産と負債を確認します。</p><span class="tag">GDP</span><span class="tag">国富</span><span class="tag">名目・実質</span>
+<ul class="uses"><li>四半期GDP</li><li>国民経済計算</li><li>正味資産</li></ul></article>
+<article class="card"><h2>総務省統計局</h2><p>人口、物価、家計、労働力など、財政の背景となる基礎統計です。</p><span class="tag">人口</span><span class="tag">物価</span><span class="tag">家計</span>
+<ul class="uses"><li>消費者物価指数</li><li>人口推計・国勢調査</li><li>家計調査</li></ul></article>
+<article class="card"><h2>IMF</h2><p>各国の政府債務、財政収支、純債務、将来見通しを比較します。</p><span class="tag">国際比較</span><span class="tag">粗債務</span><span class="tag">純債務</span>
+<ul class="uses"><li>Fiscal Monitor</li><li>Fiscal Monitor Database</li><li>債務持続可能性分析</li></ul></article>
+<article class="card"><h2>OECD</h2><p>加盟国の政府債務、政府純金融資産、税収、家計債務などを比較します。</p><span class="tag">政府純資産</span><span class="tag">税収</span><span class="tag">家計債務</span>
+<ul class="uses"><li>General government debt</li><li>Government financial wealth</li><li>Government at a Glance</li></ul></article>
+<article class="card"><h2>世界銀行</h2><p>対外債務、外貨準備、人口、成長率、新興国の債務を確認します。</p><span class="tag">対外債務</span><span class="tag">外貨準備</span><span class="tag">新興国</span>
+<ul class="uses"><li>World Development Indicators</li><li>International Debt Statistics</li></ul></article>
+<article class="card"><h2>各国政府・中央銀行</h2><p>国別比較では、国際機関の統一統計に加えて各国の公式資料も確認します。</p><span class="tag">米国</span><span class="tag">英国</span><span class="tag">EU</span><span class="tag">中国</span>
+<ul class="uses"><li>財務省・予算機関</li><li>中央銀行</li><li>国家統計機関</li></ul></article>
+<article class="card"><h2>法律・国会会議録</h2><p>国債発行の根拠、財政法、特例国債、制度改正の経緯を確認します。</p><span class="tag">財政法</span><span class="tag">制度</span><span class="tag">政府答弁</span>
+<ul class="uses"><li>法律条文</li><li>国会審議</li><li>政府答弁</li></ul></article>
+<article class="card"><h2>大学・研究機関</h2><p>評価が分かれる論点では、研究論文や複数の専門的分析を参照します。</p><span class="tag">財政持続性</span><span class="tag">理論</span><span class="tag">実証研究</span>
+<ul class="uses"><li>査読論文</li><li>研究所レポート</li><li>大学の解説資料</li></ul></article>
+</section>
+<div class="notice">数字を使うときは、実績・予算・見込み・予測を区別し、基準日と資料名を記事内に表示します。</div>
+</main>
+<footer><div class="wrap"><strong>財政の見方</strong><br/><small>結論より先に、見るポイントを。</small><div class="site-links" style="margin-top:12px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px"><a href="index.html" style="color:white;text-decoration:none">トップ</a><a href="index.html#articles" style="color:white;text-decoration:none">記事一覧</a><a href="glossary.html" style="color:white;text-decoration:none">用語集</a><a href="sources.html" style="color:white;text-decoration:none">出典</a><a href="editorial.html" style="color:white;text-decoration:none">編集方針</a><a href="roadmap.html" style="color:white;text-decoration:none">今後追加する内容</a></div></div></footer>
+<script>
+const q=document.getElementById('q'), cards=[...document.querySelectorAll('.card')], count=document.getElementById('count');
+q.addEventListener('input',()=>{let n=0,s=q.value.trim().toLowerCase();cards.forEach(c=>{let show=!s||c.textContent.toLowerCase().includes(s);c.classList.toggle('hidden',!show);if(show)n++;});count.textContent=n+'機関を表示';});
+</script>
+</body></html>

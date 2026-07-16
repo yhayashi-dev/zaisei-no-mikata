@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>なぜ国は国債を発行するのか｜財政の見方</title>
+<style>
+:root{--navy:#0b3568;--navy2:#08264d;--blue:#eaf4ff;--green:#eaf6ed;--orange:#fff3de;--ink:#14253d;--muted:#617188;--line:#dce5ef;--bg:#f6f8fb}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8}
+a{color:inherit}.wrap{width:min(1120px,calc(100% - 28px));margin:auto}
+header{position:sticky;top:0;background:#fffffff2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}
+.head{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:22px;font-weight:900;color:var(--navy);text-decoration:none}.nav a{text-decoration:none;font-weight:800;font-size:14px;margin-left:20px}
+.hero{background:linear-gradient(135deg,#fff,#eff8f2 55%,#edf6ff);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center;padding:58px 0}
+.eyebrow{display:inline-block;background:#d9efdf;color:#2f7b4b;font-size:13px;font-weight:900;padding:7px 12px;border-radius:999px}
+h1{font-size:clamp(42px,5vw,64px);line-height:1.15;color:var(--navy2);margin:15px 0 10px}.sub{font-size:22px;font-weight:800;color:#40536b}
+.tags{display:flex;gap:8px;flex-wrap:wrap}.tag{font-size:12px;font-weight:900;background:#fff;border:1px solid #c7d6e6;border-radius:999px;padding:6px 10px}
+.art{background:#fff;border:1px solid var(--line);border-radius:24px;padding:16px;box-shadow:0 16px 40px #19365b18}.art svg{width:100%;display:block}
+.layout{display:grid;grid-template-columns:225px minmax(0,1fr);gap:34px;padding:40px 0 70px}.toc{position:sticky;top:92px;align-self:start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.toc strong{display:block;color:var(--navy2);margin-bottom:8px}.toc a{display:block;text-decoration:none;color:#506078;font-size:14px;padding:5px 0}
+article{max-width:800px}.summary,.box{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;margin-bottom:22px}
+.summary{background:linear-gradient(135deg,var(--green),#fff)}h2{font-size:28px;line-height:1.35;color:var(--navy2);margin:0 0 15px}.summary h2{font-size:30px}
+.reason-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.reason{border-radius:16px;padding:19px;border:1px solid var(--line)}.reason:nth-child(1){background:var(--blue)}.reason:nth-child(2){background:var(--green)}.reason:nth-child(3){background:var(--orange)}.reason:nth-child(4){background:#f2efff}
+.reason h3{margin:0 0 8px;color:var(--navy2);font-size:20px}.reason .num{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#fff;color:var(--navy);font-weight:900;margin-bottom:10px}
+.figure{background:#f9fbfd;border:1px solid var(--line);border-radius:17px;padding:18px;margin:18px 0}.figure svg{width:100%;display:block}.caption{font-size:13px;color:var(--muted);margin-top:8px}
+.note{border-left:5px solid #3d82c6;background:var(--blue);padding:15px 17px;border-radius:0 12px 12px 0;font-weight:800;margin:18px 0}.warn{border-left-color:#d59024;background:var(--orange)}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel{border-radius:15px;padding:18px}.panel h3{margin:0 0 7px;color:var(--navy2)}.now{background:var(--green)}.future{background:var(--orange)}
+.mis{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:12px 0}.mis b{display:block;background:#fff4e4;color:#8b5b14;padding:12px 15px}.mis p{margin:0;padding:15px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px}.check{background:var(--green);border-radius:12px;padding:12px;font-weight:800}
+.next{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.next a{text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}.next small{color:var(--muted)}
+footer{background:var(--navy2);color:#fff;padding:28px 0}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.art{order:-1}.layout{grid-template-columns:1fr}.toc{position:static}.next{grid-template-columns:1fr}}
+@media(max-width:620px){.nav{display:none}.hero-grid{padding:34px 0}.sub{font-size:18px}.layout{padding-top:22px}.summary,.box{padding:20px}.reason-grid,.compare,.checks{grid-template-columns:1fr}h1{font-size:39px}h2{font-size:24px}}
+</style>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/><meta content="#0b3568" name="theme-color"/><meta content="light" name="color-scheme"/></head>
+<body>
+<header><div class="wrap head"><a class="brand" href="index.html">財政の見方</a><nav class="nav"><a href="index.html">トップ</a><a href="#summary">30秒まとめ</a><a href="sources.html">出典</a></nav></div></header>
+<section class="hero"><div class="wrap hero-grid">
+<div><span class="eyebrow">ARTICLE 02・基礎</span><h1>なぜ国は国債を発行するのか</h1><p class="sub">税収不足だけが理由ではありません</p><div class="tags"><span class="tag">読了7分</span><span class="tag">初級</span><span class="tag">確認日 2026年7月</span></div></div>
+<div class="art"><svg aria-label="国債発行の四つの理由" viewbox="0 0 650 360">
+<rect fill="#f8fbff" height="360" rx="22" width="650"></rect>
+<circle cx="325" cy="180" fill="#0b3568" r="62"></circle><text fill="#fff" font-size="22" font-weight="900" text-anchor="middle" x="325" y="170">国債を</text><text fill="#fff" font-size="22" font-weight="900" text-anchor="middle" x="325" y="200">発行</text>
+<rect fill="#eaf4ff" height="78" rx="16" stroke="#3d82c6" stroke-width="3" width="190" x="48" y="38"></rect><text fill="#0b3568" font-size="18" font-weight="900" text-anchor="middle" x="143" y="70">税収などの不足</text><text fill="#4b5d72" font-size="14" font-weight="700" text-anchor="middle" x="143" y="96">特例国債</text>
+<rect fill="#eaf6ed" height="78" rx="16" stroke="#2f7b4b" stroke-width="3" width="190" x="412" y="38"></rect><text fill="#2f7b4b" font-size="18" font-weight="900" text-anchor="middle" x="507" y="70">公共事業</text><text fill="#4b5d72" font-size="14" font-weight="700" text-anchor="middle" x="507" y="96">建設国債</text>
+<rect fill="#fff3de" height="78" rx="16" stroke="#d59024" stroke-width="3" width="190" x="48" y="244"></rect><text fill="#8d5b13" font-size="18" font-weight="900" text-anchor="middle" x="143" y="276">災害・先行投資</text><text fill="#4b5d72" font-size="14" font-weight="700" text-anchor="middle" x="143" y="302">目的別国債</text>
+<rect fill="#f2efff" height="78" rx="16" stroke="#7162b7" stroke-width="3" width="190" x="412" y="244"></rect><text fill="#56459e" font-size="18" font-weight="900" text-anchor="middle" x="507" y="276">満期の借換</text><text fill="#4b5d72" font-size="14" font-weight="700" text-anchor="middle" x="507" y="302">借換債</text>
+<path d="M238 94l55 52M412 94l-55 52M238 266l55-52M412 266l-55-52" stroke="#8aa0b7" stroke-width="5"></path>
+</svg></div></div></section>
+<div class="wrap layout">
+<aside class="toc"><strong>このページの内容</strong><a href="#summary">30秒で分かる結論</a><a href="#reasons">四つの理由</a><a href="#difference">国債ごとの違い</a><a href="#free">無料ではない</a><a href="#temporary">一時的と恒常的</a><a href="#misunderstanding">よくある誤解</a><a href="#check">ニュースの見方</a><a href="sources.html">出典</a></aside>
+<article>
+<section class="summary" id="summary"><h2>30秒で分かる結論</h2><ul><li>国は、税収などだけでは必要な支出を賄えない場合に国債を発行します。</li><li>公共事業、災害対応、先行投資、借換にも使われます。</li><li>国債の種類によって、目的や会計上の扱いが異なります。</li><li>国債で今の資金は用意できますが、費用が消えるわけではありません。</li></ul></section>
+<section class="box" id="reasons"><h2>1. 国債を発行する四つの主な理由</h2><div class="reason-grid">
+<div class="reason"><span class="num">1</span><h3>税収などでは足りない</h3><p>一般会計の歳入不足を補うため、特例国債が発行されることがあります。</p></div>
+<div class="reason"><span class="num">2</span><h3>公共事業を行う</h3><p>道路や防災など、一定の公共事業には建設国債が使われます。</p></div>
+<div class="reason"><span class="num">3</span><h3>災害や先行投資に対応する</h3><p>復興債や特定目的の国債が設けられる場合があります。</p></div>
+<div class="reason"><span class="num">4</span><h3>満期を迎える国債を借り換える</h3><p>古い国債の償還資金を用意するため、借換債を発行します。</p></div>
+</div></section>
+<section class="box" id="difference"><h2>2. 同じ「国債」でも目的は違う</h2>
+<div class="figure"><svg viewbox="0 0 700 330">
+<rect fill="#eaf4ff" height="58" rx="14" width="650" x="25" y="25"></rect><text fill="#0b3568" font-size="20" font-weight="900" x="55" y="61">建設国債</text><text fill="#4c6078" font-size="17" font-weight="700" x="215" y="61">公共事業・出資・貸付け</text>
+<rect fill="#eaf6ed" height="58" rx="14" width="650" x="25" y="99"></rect><text fill="#2f7b4b" font-size="20" font-weight="900" x="55" y="135">特例国債</text><text fill="#4c6078" font-size="17" font-weight="700" x="215" y="135">一般会計の歳入不足を補う</text>
+<rect fill="#fff3de" height="58" rx="14" width="650" x="25" y="173"></rect><text fill="#8d5b13" font-size="20" font-weight="900" x="55" y="209">復興債など</text><text fill="#4c6078" font-size="17" font-weight="700" x="215" y="209">特定の目的と償還財源</text>
+<rect fill="#f2efff" height="58" rx="14" width="650" x="25" y="247"></rect><text fill="#56459e" font-size="20" font-weight="900" x="55" y="283">借換債</text><text fill="#4c6078" font-size="17" font-weight="700" x="215" y="283">満期を迎える国債の償還</text>
+</svg><div class="caption">発行額を見るときは、何の目的の国債かを確認します。</div></div>
+<div class="note">「国債発行額」には、新しい支出に使う国債と、古い国債を返すための借換債が含まれる場合があります。</div>
+</section>
+<section class="box" id="free"><h2>3. 国債は支出を無料にするものではない</h2>
+<div class="compare"><div class="panel now"><h3>現在</h3><p>国債を発行して、必要な資金を用意します。</p></div><div class="panel future"><h3>将来</h3><p>利子を支払い、満期に償還または借換を行います。</p></div></div>
+<div class="note warn">国債は支払い時期を分ける仕組みです。費用そのものが消えるわけではありません。</div>
+</section>
+<section class="box" id="temporary"><h2>4. 一時的な不足と、毎年の不足を分ける</h2>
+<div class="compare"><div class="panel" style="background:var(--blue)"><h3>一時的な不足</h3><p>大規模災害、急激な景気悪化、一度に必要となる投資など。</p></div><div class="panel" style="background:var(--orange)"><h3>継続的な不足</h3><p>通常の支出が通常の収入を毎年上回る状態。</p></div></div>
+<p>同じ国債発行でも、一時的な対応と恒常的な赤字補填では意味が異なります。</p>
+</section>
+<section class="box" id="misunderstanding"><h2>5. よくある誤解</h2>
+<div class="mis"><b>「国債は税収不足のときだけ発行する」</b><p>公共事業、災害対応、借換など、複数の目的があります。</p></div>
+<div class="mis"><b>「建設国債なら問題ない」</b><p>施設が残っても、利子、償還、維持管理費は必要です。</p></div>
+<div class="mis"><b>「赤字国債はすべて無駄遣い」</b><p>社会保障、教育、防衛など、さまざまな支出の財源不足を補います。支出の必要性と財源不足は分けて考えます。</p></div>
+</section>
+<section class="box" id="check"><h2>6. 国債発行ニュースの確認項目</h2><div class="checks">
+<div class="check">✓ 何のために発行するか</div><div class="check">✓ 建設国債か特例国債か</div><div class="check">✓ 新規国債か借換債か</div><div class="check">✓ 一時的か継続的か</div><div class="check">✓ 償還財源は何か</div><div class="check">✓ 金利と満期はどうか</div>
+</div></section>
+<section class="box"><h2>次に読む記事</h2><div class="next"><a href="article-03-refinance.html"><strong>国債の満期と借換</strong><br/><small>満期後のお金の流れを見る</small></a><a href="article-04-holders.html"><strong>日本国債は誰が持つのか</strong><br/><small>購入者と保有者を整理する</small></a><a href="article-08-interest.html"><strong>金利が上がると何が起きるのか</strong><br/><small>将来の利払い負担を見る</small></a></div></section>
+<section class="box" id="sources"><h2>主な出典</h2><ul><li>財務省「財政とは」</li><li>財務省「赤字国債と建設国債の違い」</li><li>財務省「国債とは」</li><li>財務省「国債整理基金特別会計」</li></ul><p><strong>内容確認日：</strong>2026年7月16日</p></section>
+</article>
+</div>
+<footer><div class="wrap"><strong>財政の見方</strong><br/><small>結論より先に、見るポイントを。</small><div class="site-links" style="margin-top:12px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px"><a href="index.html" style="color:white;text-decoration:none">トップ</a><a href="index.html#articles" style="color:white;text-decoration:none">記事一覧</a><a href="glossary.html" style="color:white;text-decoration:none">用語集</a><a href="sources.html" style="color:white;text-decoration:none">出典</a><a href="editorial.html" style="color:white;text-decoration:none">編集方針</a><a href="roadmap.html" style="color:white;text-decoration:none">今後追加する内容</a></div></div></footer>
+</body></html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>金利が上がると何が起きるのか｜財政の見方</title>
+<style>
+:root{--navy:#0b3568;--navy2:#08264d;--blue:#eaf4ff;--green:#eaf6ed;--orange:#fff3de;--violet:#f2efff;--ink:#14253d;--muted:#617188;--line:#dce5ef;--bg:#f6f8fb}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8}
+a{color:inherit}.wrap{width:min(1120px,calc(100% - 28px));margin:auto}
+header{position:sticky;top:0;background:#fffffff2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}
+.head{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:22px;font-weight:900;color:var(--navy);text-decoration:none}.nav a{text-decoration:none;font-weight:800;font-size:14px;margin-left:20px}
+.hero{background:linear-gradient(135deg,#fff,#eef7ff 47%,#f2f9f3);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center;padding:58px 0}
+.eyebrow{display:inline-block;background:#d7ebff;color:var(--navy);font-size:13px;font-weight:900;padding:7px 12px;border-radius:999px}
+h1{font-size:clamp(40px,4.8vw,62px);line-height:1.15;color:var(--navy2);margin:15px 0 10px}.sub{font-size:22px;font-weight:800;color:#40536b}
+.tags{display:flex;gap:8px;flex-wrap:wrap}.tag{font-size:12px;font-weight:900;background:#fff;border:1px solid #c7d6e6;border-radius:999px;padding:6px 10px}
+.art{background:#fff;border:1px solid var(--line);border-radius:24px;padding:16px;box-shadow:0 16px 40px #19365b18}.art svg{width:100%;display:block}
+.layout{display:grid;grid-template-columns:225px minmax(0,1fr);gap:34px;padding:40px 0 70px}.toc{position:sticky;top:92px;align-self:start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.toc strong{display:block;color:var(--navy2);margin-bottom:8px}.toc a{display:block;text-decoration:none;color:#506078;font-size:14px;padding:5px 0}
+article{max-width:800px}.summary,.box{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;margin-bottom:22px}
+.summary{background:linear-gradient(135deg,var(--blue),#fff)}h2{font-size:28px;line-height:1.35;color:var(--navy2);margin:0 0 15px}.summary h2{font-size:30px}
+.figure{background:#f9fbfd;border:1px solid var(--line);border-radius:17px;padding:18px;margin:18px 0}.figure svg{width:100%;display:block}.caption{font-size:13px;color:var(--muted);margin-top:8px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel{border-radius:15px;padding:18px}.panel h3{margin:0 0 7px;color:var(--navy2)}.left{background:var(--blue)}.right{background:var(--green)}.warn{background:var(--orange)}.violet{background:var(--violet)}
+.note{border-left:5px solid #3d82c6;background:var(--blue);padding:15px 17px;border-radius:0 12px 12px 0;font-weight:800;margin:18px 0}.orange{border-left-color:#d59024;background:var(--orange)}
+.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.impact{border-radius:15px;padding:17px;border:1px solid var(--line)}.impact:nth-child(1){background:var(--blue)}.impact:nth-child(2){background:var(--green)}.impact:nth-child(3){background:var(--orange)}.impact:nth-child(4){background:var(--violet)}.impact:nth-child(5){background:#edf4f5}.impact h3{margin:0 0 6px;color:var(--navy2);font-size:20px}
+.mis{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:12px 0}.mis b{display:block;background:#fff4e4;color:#8b5b14;padding:12px 15px}.mis p{margin:0;padding:15px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px}.check{background:var(--green);border-radius:12px;padding:12px;font-weight:800}
+.next{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.next a{text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}.next small{color:var(--muted)}
+footer{background:var(--navy2);color:#fff;padding:28px 0}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.art{order:-1}.layout{grid-template-columns:1fr}.toc{position:static}.next{grid-template-columns:1fr}.impact-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.nav{display:none}.hero-grid{padding:34px 0}.sub{font-size:18px}.layout{padding-top:22px}.summary,.box{padding:20px}.split,.checks,.impact-grid{grid-template-columns:1fr}h1{font-size:38px}h2{font-size:24px}}
+</style>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/><meta content="#0b3568" name="theme-color"/><meta content="light" name="color-scheme"/></head>
+<body>
+<header><div class="wrap head"><a class="brand" href="index.html">財政の見方</a><nav class="nav"><a href="index.html">トップ</a><a href="#summary">30秒まとめ</a><a href="sources.html">出典</a></nav></div></header>
+<section class="hero"><div class="wrap hero-grid">
+<div><span class="eyebrow">ARTICLE 08・金利と金融</span><h1>金利が上がると何が起きるのか</h1><p class="sub">政府、家計、銀行、日本銀行への影響を分けて見る</p><div class="tags"><span class="tag">読了9分</span><span class="tag">中級</span><span class="tag">確認日 2026年7月</span></div></div>
+<div class="art"><svg aria-label="金利上昇が複数の主体へ波及する図" viewbox="0 0 650 390">
+<rect fill="#f8fbff" height="390" rx="22" width="650"></rect>
+<circle cx="325" cy="90" fill="#0b3568" r="62"></circle><text fill="#fff" font-size="22" font-weight="900" text-anchor="middle" x="325" y="82">金利</text><text fill="#fff" font-size="22" font-weight="900" text-anchor="middle" x="325" y="111">上昇</text>
+<rect fill="#eaf4ff" height="92" rx="18" stroke="#3d82c6" stroke-width="4" width="110" x="30" y="225"></rect><text fill="#0b3568" font-size="19" font-weight="900" text-anchor="middle" x="85" y="263">政府</text><text fill="#4c6078" font-size="14" font-weight="800" text-anchor="middle" x="85" y="289">利払い費</text>
+<rect fill="#eaf6ed" height="92" rx="18" stroke="#2f7b4b" stroke-width="4" width="110" x="155" y="225"></rect><text fill="#2f7b4b" font-size="19" font-weight="900" text-anchor="middle" x="210" y="263">家計</text><text fill="#4c6078" font-size="14" font-weight="800" text-anchor="middle" x="210" y="289">預金・ローン</text>
+<rect fill="#fff3de" height="92" rx="18" stroke="#d59024" stroke-width="4" width="110" x="280" y="225"></rect><text fill="#8d5b13" font-size="19" font-weight="900" text-anchor="middle" x="335" y="263">銀行</text><text fill="#4c6078" font-size="14" font-weight="800" text-anchor="middle" x="335" y="289">収益・評価損</text>
+<rect fill="#f2efff" height="92" rx="18" stroke="#7162b7" stroke-width="4" width="110" x="405" y="225"></rect><text fill="#56459e" font-size="19" font-weight="900" text-anchor="middle" x="460" y="263">保険・年金</text><text fill="#4c6078" font-size="14" font-weight="800" text-anchor="middle" x="460" y="289">運用収益</text>
+<rect fill="#edf4f5" height="92" rx="18" stroke="#4c8191" stroke-width="4" width="90" x="530" y="225"></rect><text fill="#356572" font-size="18" font-weight="900" text-anchor="middle" x="575" y="263">日銀</text><text fill="#4c6078" font-size="13" font-weight="800" text-anchor="middle" x="575" y="289">支払利息</text>
+<path d="M295 145L95 225M310 151L210 225M325 152v73M340 151L460 225M355 145L575 225" stroke="#8798aa" stroke-width="5"></path>
+</svg></div></div></section>
+<div class="wrap layout">
+<aside class="toc"><strong>このページの内容</strong><a href="#summary">30秒で分かる結論</a><a href="#types">金利の種類</a><a href="#bond-price">国債価格との関係</a><a href="#government">政府への影響</a><a href="#households">家計への影響</a><a href="#banks">銀行・保険</a><a href="#boj">日本銀行</a><a href="#good-bad">金利上昇の背景</a><a href="sources.html">出典</a></aside>
+<article>
+<section class="summary" id="summary"><h2>30秒で分かる結論</h2><ul><li>金利上昇は、新しく発行する国債や借換債の利子を高くしやすくします。</li><li>発行済みの固定金利国債の利子が、一度に全部上がるわけではありません。</li><li>家計ではローン負担が増える一方、預金金利が上がる可能性があります。</li><li>銀行・保険・日銀には、利益と損失の両面があります。</li></ul></section>
+<section class="box" id="types"><h2>1. 「金利」にはいくつか種類がある</h2><div class="impact-grid">
+<div class="impact"><h3>政策金利</h3><p>中央銀行の金融政策の基準となる短期金利。</p></div>
+<div class="impact"><h3>国債金利</h3><p>国債の利回り。長期金利の代表として10年国債が使われます。</p></div>
+<div class="impact"><h3>預金金利</h3><p>銀行預金に対して受け取る利子。</p></div>
+<div class="impact"><h3>貸出金利</h3><p>住宅ローンや企業融資で支払う利子。</p></div>
+<div class="impact"><h3>実質金利</h3><p>名目金利から物価上昇の影響を差し引いた考え方。</p></div>
+</div></section>
+<section class="box" id="bond-price"><h2>2. 金利と国債価格は反対方向に動きやすい</h2>
+<div class="figure"><svg viewbox="0 0 700 270">
+<rect fill="#eaf4ff" height="95" rx="18" width="220" x="35" y="50"></rect><text fill="#0b3568" font-size="22" font-weight="900" text-anchor="middle" x="145" y="90">市場金利が上がる</text><text fill="#4c6078" font-size="16" font-weight="800" text-anchor="middle" x="145" y="120">新しい国債の利回り上昇</text>
+<path d="M255 97h190" stroke="#d59024" stroke-width="8"></path><polygon fill="#d59024" points="445,97 423,85 423,109"></polygon>
+<rect fill="#fff3de" height="95" rx="18" width="220" x="445" y="50"></rect><text fill="#8d5b13" font-size="22" font-weight="900" text-anchor="middle" x="555" y="90">古い国債の価格</text><text fill="#8d5b13" font-size="18" font-weight="900" text-anchor="middle" x="555" y="120">下がりやすい</text>
+<path d="M145 165v55" stroke="#3d82c6" stroke-width="7"></path><polygon fill="#3d82c6" points="145,220 134,200 156,200"></polygon>
+<path d="M555 165v55" stroke="#d59024" stroke-width="7"></path><polygon fill="#d59024" points="555,220 544,200 566,200"></polygon>
+<text fill="#3d82c6" font-size="17" font-weight="900" text-anchor="middle" x="145" y="250">新規購入者には高い利回り</text>
+<text fill="#8d5b13" font-size="17" font-weight="900" text-anchor="middle" x="555" y="250">既存保有者には評価損の可能性</text>
+</svg><div class="caption">満期まで保有する場合と、途中で売る場合では影響が異なります。</div></div>
+</section>
+<section class="box" id="government"><h2>3. 政府の利払い費は徐々に増える</h2><div class="split"><div class="panel left"><h3>発行済みの固定金利国債</h3><p>市場金利が上がっても、支払利子はすぐには変わりません。</p></div><div class="panel warn"><h3>新規国債・借換債</h3><p>発行時点の高い金利が反映されます。</p></div></div>
+<div class="figure"><svg viewbox="0 0 700 230">
+<circle cx="80" cy="105" fill="#eaf4ff" r="38" stroke="#3d82c6" stroke-width="4"></circle><text fill="#0b3568" font-size="17" font-weight="900" text-anchor="middle" x="80" y="101">1年目</text><text fill="#4c6078" font-size="14" font-weight="800" text-anchor="middle" x="80" y="124">一部だけ</text>
+<circle cx="260" cy="105" fill="#edf6ff" r="42" stroke="#3d82c6" stroke-width="4"></circle><text fill="#0b3568" font-size="17" font-weight="900" text-anchor="middle" x="260" y="101">2年目</text><text fill="#4c6078" font-size="14" font-weight="800" text-anchor="middle" x="260" y="124">借換が増える</text>
+<circle cx="450" cy="105" fill="#fff3de" r="47" stroke="#d59024" stroke-width="4"></circle><text fill="#8d5b13" font-size="17" font-weight="900" text-anchor="middle" x="450" y="101">数年後</text><text fill="#4c6078" font-size="14" font-weight="800" text-anchor="middle" x="450" y="124">影響が拡大</text>
+<circle cx="625" cy="105" fill="#f2efff" r="52" stroke="#7162b7" stroke-width="4"></circle><text fill="#56459e" font-size="16" font-weight="900" text-anchor="middle" x="625" y="99">利払い費</text><text fill="#56459e" font-size="16" font-weight="900" text-anchor="middle" x="625" y="124">増加</text>
+<path d="M118 105h100M302 105h101M497 105h76" stroke="#7d8fa3" stroke-width="6"></path><polygon fill="#7d8fa3" points="218,105 200,95 200,115"></polygon><polygon fill="#7d8fa3" points="403,105 385,95 385,115"></polygon><polygon fill="#7d8fa3" points="573,105 555,95 555,115"></polygon>
+</svg></div>
+<div class="note">国債の平均残存期間が長いほど、金利上昇の影響は比較的ゆっくり広がります。</div></section>
+<section class="box" id="households"><h2>4. 家計には良い面と悪い面がある</h2><div class="split"><div class="panel right"><h3>利子を受け取る側</h3><p>預金金利、新しく買う国債、定期預金の利回りが上がる可能性があります。</p></div><div class="panel warn"><h3>利子を支払う側</h3><p>変動金利型住宅ローンや各種ローンの負担が増える可能性があります。</p></div></div>
+<div class="note orange">預金金利と貸出金利が、同じ幅・同じ時期に動くとは限りません。</div></section>
+<section class="box" id="banks"><h2>5. 銀行・保険会社への影響</h2><div class="split"><div class="panel left"><h3>銀行</h3><p>貸出収益が改善する一方、保有国債の価格下落や預金金利上昇の負担があります。</p></div><div class="panel violet"><h3>保険・年金</h3><p>短期的には評価損、長期的には新しい債券の利回り上昇による運用改善があり得ます。</p></div></div>
+<p>資産だけでなく、将来支払う保険金や年金という負債も合わせて管理します。</p></section>
+<section class="box" id="boj"><h2>6. 日本銀行への影響</h2>
+<div class="figure"><svg viewbox="0 0 700 260">
+<rect fill="#eaf6ed" height="105" rx="18" width="220" x="35" y="65"></rect><text fill="#2f7b4b" font-size="21" font-weight="900" text-anchor="middle" x="145" y="105">日銀の収入</text><text fill="#4c6078" font-size="17" font-weight="800" text-anchor="middle" x="145" y="138">保有国債の利子</text>
+<rect fill="#fff3de" height="105" rx="18" width="220" x="445" y="65"></rect><text fill="#8d5b13" font-size="21" font-weight="900" text-anchor="middle" x="555" y="105">日銀の支出</text><text fill="#4c6078" font-size="17" font-weight="800" text-anchor="middle" x="555" y="138">当座預金への利息</text>
+<text fill="#0b3568" font-size="42" font-weight="900" text-anchor="middle" x="350" y="126">−</text>
+<rect fill="#f2efff" height="45" rx="13" width="210" x="245" y="195"></rect><text fill="#56459e" font-size="17" font-weight="900" text-anchor="middle" x="350" y="224">利益・国庫納付金に影響</text>
+</svg></div>
+<p>政策金利が上がると、当座預金への支払利息が比較的早く増える場合があります。</p></section>
+<section class="box" id="good-bad"><h2>7. 同じ金利上昇でも、背景で意味が変わる</h2><div class="split"><div class="panel right"><h3>成長を伴う上昇</h3><p>賃金、企業利益、名目GDP、税収も増えている場合。</p></div><div class="panel warn"><h3>信頼低下を伴う上昇</h3><p>高インフレ、通貨安、国債需要低下などが背景の場合。</p></div></div>
+<div class="note orange">「長期金利が何％か」だけでなく、なぜ上がったのかを確認します。</div></section>
+<section class="box"><h2>8. よくある誤解</h2>
+<div class="mis"><b>「政府の国債利子が翌日から全部上がる」</b><p>固定金利の発行済み国債は変わらず、新規発行や借換から徐々に影響します。</p></div>
+<div class="mis"><b>「金利上昇はすべての人に悪い」</b><p>借り手には負担でも、預金者や新しく債券を買う人には利回り上昇の利点があります。</p></div>
+<div class="mis"><b>「金利が高い国ほど財政危機」</b><p>インフレ率、経済成長率、通貨、中央銀行、市場規模によって適正な金利水準は異なります。</p></div>
+</section>
+<section class="box"><h2>ニュースを見るときの確認項目</h2><div class="checks"><div class="check">✓ 政策金利か長期金利か</div><div class="check">✓ なぜ上がったのか</div><div class="check">✓ インフレ率はどうか</div><div class="check">✓ 税収・名目GDPは伸びているか</div><div class="check">✓ 平均残存期間はどの程度か</div><div class="check">✓ 家計・銀行・日銀への影響は何か</div></div></section>
+<section class="box"><h2>次に読む記事</h2><div class="next"><a href="article-09-comparison.html"><strong>各国の財政をどう比べるか</strong><br/><small>金利だけで比べない理由を見る</small></a><a href="article-03-refinance.html"><strong>国債の満期と借換</strong><br/><small>借換時の金利反映を見る</small></a><a href="article-07-own-currency.html"><strong>自国通貨建て国債なら安全か</strong><br/><small>金利が制約になる理由を見る</small></a></div></section>
+<section class="box" id="sources"><h2>主な出典</h2><ul><li>財務省「債務管理リポート」</li><li>財務省「後年度歳出・歳入への影響試算」</li><li>日本銀行「国債価格と利回り」</li><li>日本銀行「金融システムレポート」</li></ul><p><strong>内容確認日：</strong>2026年7月16日</p></section>
+</article>
+</div>
+<footer><div class="wrap"><strong>財政の見方</strong><br/><small>結論より先に、見るポイントを。</small><div class="site-links" style="margin-top:12px;display:flex;gap:14px;flex-wrap:wrap;font-size:13px"><a href="index.html" style="color:white;text-decoration:none">トップ</a><a href="index.html#articles" style="color:white;text-decoration:none">記事一覧</a><a href="glossary.html" style="color:white;text-decoration:none">用語集</a><a href="sources.html" style="color:white;text-decoration:none">出典</a><a href="editorial.html" style="color:white;text-decoration:none">編集方針</a><a href="roadmap.html" style="color:white;text-decoration:none">今後追加する内容</a></div></div></footer>
+</body></html>
