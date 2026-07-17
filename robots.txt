@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://yhayashi-dev.github.io/zaisei-no-mikata/sitemap.xml
